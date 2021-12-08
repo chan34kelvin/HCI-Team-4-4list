@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import City from "./components/City";
 import State from "./components/State";
 import Keyword from "./components/Keyword";
@@ -13,15 +13,26 @@ export default function SearchBar() {
   }));
 
   return (
-    <div className="navbar-collapse collapse" id="navSearchBar">
-      <div className="d-flex flex-column flex-lg-row w-100 align-items-start align-items-lg-center gap-3">
-        <Keyword states={states} setStates={setStates}/>
-        <div className="fs-3 mx-1 text-center" style={{ minWidth: "2%" }}>
+    <div className="d-flex flex-column flex-lg-row w-100 align-items-start align-items-lg-center gap-3">
+      <div className="navbar-collapse collapse w-100" id="navSearchBar">
+        <Keyword states={states} setStates={setStates} />
+        <div
+          className="fs-3 mt-3 m-1 text-md-center"
+          style={{ minWidth: "10%" }}
+        >
           in
         </div>
-        <State states={states} setStates={setStates}/>
-        <City states={states} setStates={setStates}/>
-        <ZipCode states={states} setStates={setStates}/>
+      </div>
+      <div
+        className="navbar-collapse collapse w-100"
+        id="navSearchBar"
+        style={{ minWidth: "60%" }}
+      >
+        <div className="d-flex flex-column flex-md-row w-100 gap-3">
+          <State states={states} setStates={setStates} />
+          <City states={states} setStates={setStates} />
+          <ZipCode states={states} setStates={setStates} />
+        </div>
       </div>
     </div>
   );
