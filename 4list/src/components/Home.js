@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import Navbar from './Navbar';
+import Navigation from './navigation/Navigation';
 
 const Home = () => {
     return (
         <div>
-            <Navbar/>
+            <Navigation/>
+            {/* <Navbar/> */}
         </div>
     );
 }
