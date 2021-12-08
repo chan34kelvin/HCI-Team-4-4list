@@ -13,11 +13,17 @@ const NavigationBar = () => {
                         </Navbar.Brand>
                         {/* </Col> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse>
-                        <Nav className='mx-auto'>
-                            <Col ><Nav.Link>About</Nav.Link></Col>
-                            <Col lg={8}><Nav.Link>My Account</Nav.Link></Col>
-                            <Col lg={4}><Nav.Link>Post ad</Nav.Link></Col>
+                    <Navbar.Collapse className=''>
+                        <Nav className='navbar-nav ms-auto mb-lg-4'>
+                            {/* <Col> */}
+                            <Nav.Link>About</Nav.Link>
+                            {/* </Col> */}
+                            <Col lg={8}>
+                                <Nav.Link>My Account</Nav.Link>
+                            </Col>
+                             <Col lg={4}>
+                                <Nav.Link>Post ad</Nav.Link>
+                             </Col>
                         </Nav>  
                     </Navbar.Collapse>
         
