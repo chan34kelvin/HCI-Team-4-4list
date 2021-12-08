@@ -6,9 +6,9 @@ export default function Logo(){
     const logo = "/images/Logo.png"
     
     return(
-        <div className= "" style = {{minWidth: "20%"}} >
+        <div className= "" style = {{minWidth: "18%"}} >
             <Link className= "text-decoration-none" to="/">
-                <div className= "ratio ratio-16x9" style={{minWidth: "75px"}}>
+                <div className= "ratio ratio-16x9" style={{minWidth: "100px"}}>
                     <img src= {logo} alt="logo"/>
                 </div>
             </Link>
