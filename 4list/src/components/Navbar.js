@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Navbar, Nav, Form } from 'react-bootstrap';
 import './navbar.css';
+import Logo from '../images/Logo.png'
  
 const NavigationBar = () => {
     return (
         <div>
             <Navbar expand='lg' className='navbar-custom'>
-                <Container  className='mb-4'>   
-                    <Col xs lg="8"><Navbar.Brand>4List</Navbar.Brand></Col>
+                <Container  className='mb-1'>   
+                    {/* <Col xs lg="8"> */}
+                        <Navbar.Brand><img src={Logo} alt='Logo' className='logo img-responsive '/>
+                        </Navbar.Brand>
+                        {/* </Col> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse>
                         <Nav className='mx-auto'>
                             <Col ><Nav.Link>About</Nav.Link></Col>
-                            <Col lg={9}><Nav.Link>My Account</Nav.Link></Col>
-                            <Col lg={5}><Nav.Link>Post ad</Nav.Link></Col>
+                            <Col lg={8}><Nav.Link>My Account</Nav.Link></Col>
+                            <Col lg={4}><Nav.Link>Post ad</Nav.Link></Col>
                         </Nav>  
                     </Navbar.Collapse>
         
@@ -21,40 +25,23 @@ const NavigationBar = () => {
             </Navbar>
             <Navbar fixed='' expand='lg' className='navbar-custom'>
                 <Container >
-                <Form className=''>
-                    <Row className='justify-content-center d-flex'>
-                        <Col sm={7}>
-                            {/* <div className='md-6'> */}
-                            <Form.Group className='mb-3'>
-                                <Form.Control type='text' placeholder='Search'></Form.Control>
-                            </Form.Group>
-                            {/* </div> */}
-                        </Col>
-                    
-                        <Col lg={3}>
-                            <Form.Group className="mb-3">
-                                <Form.Select aria-label="Select state">
-                                    <option>State</option>
-                                    <option value="1">...</option>
-                                </Form.Select>
-                            </Form.Group>
-                        </Col>
-                        <Col lg={3}>
-                            <Form.Group>
-                                <Form.Select aria-label="Select City">
-                                    <option>City</option>
-                                    <option value="1">...</option>
-                                </Form.Select>
-                            </Form.Group>
-                        </Col>
-                        <Col lg={3}>
-                            <Form.Group>
-                                <Form.Control type='text' placeholder='Zip Code'></Form.Control>
-                            </Form.Group>
-                        </Col>
-                        
-                    </Row>
-                </Form>
+                <form class="row g-2 justify-content-center col-lg-6 offset-lg-3">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="search" placeholder="Search"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="inputCity" placeholder='City'/>
+                    </div>
+                    <div class="col-md-2">
+                        <select id="inputState" class="form-select">
+                        <option selected>State</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="inputZip" placeholder='ZIP'/>
+                    </div>
+                    </form>
                 </Container>
             </Navbar>
         </div>

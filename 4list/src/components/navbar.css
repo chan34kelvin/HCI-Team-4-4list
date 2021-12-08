@@ -1,6 +1,13 @@
 .navbar-custom{
-    background-color: #EA840D;
+    /* background-color: #EA840D; */
+    background-color: #DCDCDC;
 }
 /* .search-bar{
     /* width: 200%; */
 /* } */
+.logo{
+    height: 70px;
+    width: 90px;
+    /* padding-left: 5px; */
+    /* padding-right: 100px; */
+}
