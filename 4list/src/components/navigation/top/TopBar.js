@@ -7,6 +7,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 export default function TopBar() {
   return (
     <div className="d-flex flex-column flex-lg-row w-100 gap-3">
+      
       {/* home button and menu */}
       <div className="d-flex flex-row flex-grow-1 gap-3">
         <Logo />
