@@ -11,7 +11,7 @@ export default function State(props) {
       }}
     >
       <select
-        className="form-select text-md-center p-2 ps-0 fs-5"
+        className="form-select text-lg-center p-2 ps-0 fs-5"
         style={{
           border: "none",
           transition: "none",

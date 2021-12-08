@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import TopBar from "./top/TopBar";
 import SearchBar from "./search/SearchBar";
 

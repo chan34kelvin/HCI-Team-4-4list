@@ -7,11 +7,11 @@ export default function City(props) {
       className="d-flex flex-row w-100 align-items-center gap-3"
       style={{
         borderBottom: "1px solid",
-        minWidth: "40%",
+        minWidth: "30%",
       }}
     >
       <select
-        className="form-select text-md-center p-2 ps-0 fs-5"
+        className="form-select text-lg-center p-2 ps-0 fs-5"
         style={{
           border: "none",
           transition: "none",
