@@ -23,7 +23,7 @@ export default function ZipCode(props) {
             transition: "none",
             borderRadius: "0",
           }}
-          onChange= {(event) => { setStates({...states, ["Zip"]: event.target.value })}}
+          onChange= {(event) => { setStates({...states, "Zip": event.target.value })}}
         ></input>
       </div>
     );

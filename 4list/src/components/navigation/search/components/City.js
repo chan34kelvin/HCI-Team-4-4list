@@ -18,7 +18,7 @@ export default function City(props) {
           borderRadius: "0",
         }}
         onChange={(event) => {
-          setStates({ ...states, ["City"]: event.target.value });
+          setStates({ ...states, "City": event.target.value });
         }}
       >
         <option value="">City</option>

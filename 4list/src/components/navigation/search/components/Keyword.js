@@ -29,7 +29,7 @@ export default function Keyword(props) {
           borderRadius: "0",
         }}
         onChange={(event) => {
-          setStates({ ...states, ["Keyword"]: event.target.value });
+          setStates({ ...states, "Keyword": event.target.value });
         }}
       ></input>
     </form>
