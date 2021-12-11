@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
-//view
+//Views
 import EventPageView from "../views/EventPage";
-//Model
+
+//Models
 const axios = require("axios");
-const EventPageModel = require("../models/EventPage.js");
-const DetailHelperModel = require("../helpers/DetailHelper")
+const EventModel = require("../models/EventModel.js");
 
 export default function EventPage() {
   const URLPath = process.env.PUBLIC_URL;
@@ -32,12 +32,11 @@ export default function EventPage() {
         fetch(URLPath + "/db/users.txt")
           .then((response) => response.text())
           .then((data) => {
-            // Do something with your data
+            // find the matching user info
             const temp1 = JSON.parse(data).filter((card) => {
               return card["userId"] === temp["userId"];
             })[0];
             setUser(temp1);
-            console.log(temp1);
           });
 
         //this code is referenced from google api
@@ -66,8 +65,8 @@ export default function EventPage() {
 
   //four element a view needs
   const image = "/images/" + data["image"];
-  const details = EventPageModel.getDetails(data);
-  const title = DetailHelperModel.addDateToTitle(data["startDate"], data["endDate"], data["title"])
+  const details = EventModel.getDetails(data);
+  const title = EventModel.addDateToTitle(data["startDate"], data["endDate"], data["title"])
   const description = data["description"];
   const address = data["address"];
   const locDetails = { place: data["place"], parking: data["parking"] };
