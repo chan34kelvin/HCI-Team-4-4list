@@ -8,12 +8,12 @@ const Home = lazy(() => import("./components/Home"));
 function App() {
   return (
     <Router>
-      <div id="App">
-        <Suspense fallback={<h1 className="">loading...</h1>}>
-          <Route exact path= "/" component= {Home}/>
-        </Suspense>
-      </div>
-    </Router>
+    <div id="App">
+      <Suspense fallback={<h1 className="">loading...</h1>}>
+        <Route exact path= "/" component= {Home}/>
+      </Suspense>
+    </div>
+  </Router>
   );
 }
 
