@@ -1,5 +1,6 @@
 import { HiLocationMarker } from "react-icons/hi"
 import { MdPersonPin } from "react-icons/md"
+import { MdDescription } from "react-icons/md"
 
 export default function EventButton() {
   return (
@@ -8,7 +9,13 @@ export default function EventButton() {
         <div className="text-center">
           <MdPersonPin />
         </div>
-        <div className="">User</div>
+        <div className="">Contacts</div>
+      </a>
+      <a href="#description" className="text-decoration-none d-flex flex-column fs-5">
+        <div className="text-center">
+          <MdDescription />
+        </div>
+        <div className="">Description</div>
       </a>
       <a href="#location" className="text-decoration-none d-flex flex-column fs-5">
         <div className="text-center">

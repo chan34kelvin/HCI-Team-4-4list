@@ -19,12 +19,15 @@ export default function EventUser(props) {
   }
 
   return (
-    <div className="d-flex flex-column gap-4 fs-4" id="user">
-      <div className="fw-bolder fs-3">
-        Contact Info:
-        <hr />
+    <div className="d-flex flex-column gap-4 fs-4">
+      <div className="d-flex flex-wrap gap-5">
+        <div className="fw-bolder fs-3">Contact Info:</div>
       </div>
+      <hr className="p-0 m-0"/>
       <div className="d-flex flex-wrap">{userInfo}</div>
+      <div className="blockquote-footer">
+        Please do not spam nor harass the poster 
+      </div>
     </div>
   );
 }

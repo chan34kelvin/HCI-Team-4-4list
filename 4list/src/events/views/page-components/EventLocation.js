@@ -16,7 +16,7 @@ export default function EventLocation(props) {
   }
 
   return (
-    <div className="row g-5 fs-4" id="location">
+    <div className="row g-5 fs-4">
       <div className="col-md-5">
         <div className="ratio ratio-1x1">
           {props.center && (
