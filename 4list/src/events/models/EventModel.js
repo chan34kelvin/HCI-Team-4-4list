@@ -201,7 +201,6 @@ EventModel.filterTimedData = (filterData, states) => {
       if (whatToCheck.includes(key)) {
         if (states[key] !== "") {
           filteredData = filteredData.filter((data) => {
-            console.log(data["month"], states["month"])
             return data[key] == states[key];
           });
         }

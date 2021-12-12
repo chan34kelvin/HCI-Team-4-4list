@@ -9,7 +9,6 @@ const axios = require("axios");
 const EventModel = require("../models/EventModel.js");
 
 export default function EventPage() {
-  const URLPath = process.env.PUBLIC_URL;
   const [data, setData] = useState(() => []);
   const [center, setCenter] = useState(() => null);
   const [user, setUser] = useState(() => null);
@@ -17,7 +16,7 @@ export default function EventPage() {
   const history = useHistory();
 
   useEffect(() => {
-    fetch(URLPath + "/db/events.txt")
+    fetch("/db/events.txt")
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
@@ -29,7 +28,7 @@ export default function EventPage() {
         const address = temp["address"];
 
         //get the poster info from a list of users
-        fetch(URLPath + "/db/users.txt")
+        fetch("/db/users.txt")
           .then((response) => response.text())
           .then((data) => {
             // find the matching user info

@@ -6,7 +6,6 @@ import EventListView from "../views/EventList.js";
 const EventModel = require("../models/EventModel.js");
 
 export default function EventList() {
-  const URLPath = process.env.PUBLIC_URL;
   const [data, setData] = useState(() => []);
   const [filterData, setFilterData] = useState(() => []);
   const [error, setError] = useState(() => (false))
@@ -22,7 +21,7 @@ export default function EventList() {
   }));
 
   useEffect(() => {
-    fetch(URLPath + "/db/events.txt")
+    fetch("/db/events.txt")
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
@@ -30,7 +29,7 @@ export default function EventList() {
         setData(temp);
         setFilterData(temp);
       });
-  }, [URLPath]);
+  }, []);
 
   useEffect(() => {
     //this will take effect as state is being modified by view from user input
