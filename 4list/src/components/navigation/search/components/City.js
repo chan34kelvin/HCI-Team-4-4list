@@ -7,7 +7,7 @@ export default function City(props) {
       className="d-flex flex-row w-100 align-items-center gap-3"
       style={{
         borderBottom: "1px solid",
-        minWidth: "15%",
+        minWidth: "30%",
       }}
     >
       <select
@@ -18,7 +18,7 @@ export default function City(props) {
           borderRadius: "0",
         }}
         onChange={(event) => {
-          setStates({ ...states, ["City"]: event.target.value });
+          setStates({ ...states, "City": event.target.value });
         }}
       >
         <option value="">City</option>

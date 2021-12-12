@@ -3,9 +3,10 @@ import Navbar from './Navbar';
 import Navigation from './navigation/Navigation';
 
 const Home = () => {
+
     return (
         <div>
-            <Navigation/>
+            {/* <Navigation/> */}
             {/* <Navbar/> */}
         </div>
     );

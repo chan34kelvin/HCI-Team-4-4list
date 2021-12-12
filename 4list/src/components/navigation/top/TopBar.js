@@ -35,7 +35,7 @@ export default function TopBar() {
         <div
           className="navbar-collapse collapse align-items-start"
           id="navMenu"
-          style={{ width: "100%" }}
+         
         >
           <Login />
           <PostButton />

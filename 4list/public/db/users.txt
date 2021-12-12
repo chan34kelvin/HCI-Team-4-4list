@@ -1,0 +1,6 @@
+[
+    {"userId": "1", "email": "ccc74@gmail.com", "phone": "415-555-5467", "name": "Calvin"},
+    {"userId": "2", "email": "bbb84@gmail.com", "phone": "415-655-8967", "name": "Devin"},
+    {"userId": "3", "email": "koman75@gmail.com", "phone": "415-235-9957", "name": "Koeman"},
+    {"userId": "4", "email": "watsone4@gmail.com", "phone": "415-545-3457", "name": "Watsone"}
+]

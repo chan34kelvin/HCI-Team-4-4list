@@ -9,7 +9,7 @@ export default function ZipCode(props) {
         className="d-flex flex-row w-100 align-items-center gap-4"
         style={{
           borderBottom: "1px solid",
-          minWidth: "10%",
+          minWidth: "15%",
           maxWidth: "200px",
         }}
       >
@@ -23,7 +23,7 @@ export default function ZipCode(props) {
             transition: "none",
             borderRadius: "0",
           }}
-          onChange= {(event) => { setStates({...states, ["Zip"]: event.target.value })}}
+          onChange= {(event) => { setStates({...states, "Zip": event.target.value })}}
         ></input>
       </div>
     );
