@@ -1,8 +1,40 @@
 const DateHelperModel = {};
 
 DateHelperModel.checkIfWithinDate = (currentDate, startDate, endDate) => {
-    
-}
+  if (startDate.getTime() === endDate.getTime()) {
+    let year = startDate.getFullYear() === currentDate.getFullYear();
+    let month = startDate.getMonth() === currentDate.getMonth();
+    let day = startDate.getDate() === currentDate.getDate();
+
+    if (year && month && day) {
+      return true;
+    }
+  }
+
+  if (startDate.getTime() !== endDate.getTime()) {
+    while (startDate.getTime() !== endDate.getTime()) {
+      let year = startDate.getFullYear() === currentDate.getFullYear();
+      let month = startDate.getMonth() === currentDate.getMonth();
+      let day = startDate.getDate() === currentDate.getDate();
+
+      if (year && month && day) {
+        return true;
+      }
+      startDate.setDate(startDate.getDate() + 1);
+    }
+
+    //   console.log(currentDate, startDate, endDate)
+    let year = startDate.getFullYear() === currentDate.getFullYear();
+    let month = startDate.getMonth() === currentDate.getMonth();
+    let day = startDate.getDate() === currentDate.getDate();
+
+    if (year && month && day) {
+      return true;
+    }
+  }
+
+  return false;
+};
 
 // part of the code reference from https://www.w3schools.com/jsref/jsref_getday.asp
 DateHelperModel.getDaysOfWeek = (startDate, endDate) => {
@@ -17,14 +49,12 @@ DateHelperModel.getDaysOfWeek = (startDate, endDate) => {
   ];
   let result = [];
   let i = 0;
-  let start = new Date(startDate);
-  const end = new Date(endDate);
 
-  result[i++] = daysOfweek[start.getDay()];
+  result[i++] = daysOfweek[startDate.getDay()];
 
-  while (start.getTime() !== end.getTime()) {
-    start.setDate(start.getDate() + 1);
-    result[i++] = daysOfweek[start.getDay()];
+  while (startDate.getTime() !== endDate.getTime()) {
+    startDate.setDate(startDate.getDate() + 1);
+    result[i++] = daysOfweek[startDate.getDay()];
   }
 
   return result;
