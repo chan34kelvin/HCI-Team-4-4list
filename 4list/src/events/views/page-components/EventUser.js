@@ -6,7 +6,6 @@ export default function EventUser(props) {
   if (props.user) {
     for (let i = 0; i < showItems.length; i += 1) {
       let key = showItems[i];
-      console.log(key);
       userInfo[i] = (
         <div className="d-flex flex-wrap gap-4 me-5 mb-3">
           <div className="fw-bold">

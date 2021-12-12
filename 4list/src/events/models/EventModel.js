@@ -80,7 +80,7 @@ EventModel.generateList = (data) => {
         let result = {
           data: arr,
           length: arr.length,
-          day: DateHelperModel.getDaysOfWeek(currentDate, currentDate)[0],
+          weekDay: DateHelperModel.getDaysOfWeek(currentDate, currentDate)[0],
           date:
             currentDate.getMonth() +
             1 +
@@ -88,6 +88,9 @@ EventModel.generateList = (data) => {
             currentDate.getDate() +
             "/" +
             currentDate.getFullYear(),
+          day: currentDate.getDate(),
+          month: currentDate.getMonth(),
+          year: currentDate.getFullYear(),
         };
 
         results[count++] = result;
@@ -121,17 +124,6 @@ EventModel.findListOfCurrentDate = (currentDate, data) => {
   while (i < data.length) {
     const currentData = data[i];
 
-    const details = {
-      category: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      size: "",
-      startTime: "",
-      endTime: "",
-      daysOfWeek: [],
-    };
-
     // console.log(currentData["id"])
     if (
       DateHelperModel.checkIfWithinDate(
@@ -144,6 +136,7 @@ EventModel.findListOfCurrentDate = (currentDate, data) => {
       results[count++] = {
         id: currentData["id"],
         title: currentData["title"],
+        image: currentData["image"],
         details: EventModel.getDetails(currentData),
       };
     }
@@ -153,6 +146,7 @@ EventModel.findListOfCurrentDate = (currentDate, data) => {
   return { ids: ids, results: results };
 };
 
+//filter
 EventModel.filterData = (filterData, states) => {
   //for time, find if is between or the active time
   //for size, find if is within that range
@@ -197,7 +191,29 @@ EventModel.filterData = (filterData, states) => {
   return filteredData;
 };
 
+EventModel.filterTimedData = (filterData, states) => {
+
+  let filteredData = filterData;
+  const whatToCheck = ["month", "day", "year", "weekDay"];
+
+  if (filteredData.length > 0) {
+    for (let key in states) {
+      if (whatToCheck.includes(key)) {
+        if (states[key] !== "") {
+          filteredData = filteredData.filter((data) => {
+            console.log(data["month"], states["month"])
+            return data[key] == states[key];
+          });
+        }
+      }
+    }
+  }
+
+  return filteredData;
+}
+
 EventModel.checkTimeRange = (startTime, endTime, filterTime) => {
+
   if (startTime.getHours() === endTime.getHours()) {
     if (filterTime.getHours() === startTime.getHours()) {
       return true;
@@ -219,7 +235,7 @@ EventModel.checkTimeRange = (startTime, endTime, filterTime) => {
 
 EventModel.checkSizeRange = (size, filterSize) => {
   let actualSize = 0;
-  if (size === "10+") {
+  if (size === ">10") {
     actualSize = 11;
   } else {
     actualSize = parseInt(size, 10);
@@ -228,8 +244,8 @@ EventModel.checkSizeRange = (size, filterSize) => {
   if (filterSize === "less than 5 ppl") {
     return actualSize < 5;
   }
-  if (filterSize === "5 to 10 ppl") {
-    return 5 <= actualSize && actualSize <= 10;
+  if (filterSize === "5 to 9 ppl") {
+    return 5 <= actualSize && actualSize <= 9;
   }
   if (filterSize === "10 ppl or more") {
     return actualSize >= 10;
@@ -237,5 +253,29 @@ EventModel.checkSizeRange = (size, filterSize) => {
     return false;
   }
 };
+
+EventModel.getVenues = (data) => {
+  let uniqueVenues = new Set();
+
+  if(data){
+    for(let i=0; i< data.length; i+=1){
+      uniqueVenues.add(data[i]["venue"])
+    }
+  }
+
+  return Array.from(uniqueVenues)
+}
+
+EventModel.getCategories = (data) => {
+  let uniqueCategory = new Set();
+
+  if(data){
+    for(let i=0; i< data.length; i+=1){
+      uniqueCategory.add(data[i]["category"])
+    }
+  }
+
+  return Array.from(uniqueCategory)
+}
 
 module.exports = EventModel;

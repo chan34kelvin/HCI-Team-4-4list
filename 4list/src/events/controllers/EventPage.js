@@ -28,7 +28,7 @@ export default function EventPage() {
         setData(temp);
         const address = temp["address"];
 
-        //get user info
+        //get the poster info from a list of users
         fetch(URLPath + "/db/users.txt")
           .then((response) => response.text())
           .then((data) => {
@@ -57,13 +57,14 @@ export default function EventPage() {
       });
   }, [parameter]);
 
+  //revert back to old page if not found
   if (!data) {
-    //revert back to old page if not found
     history.replace("/event");
     return history.go(0);
   }
 
   //four element a view needs
+  const id= data["id"]
   const image = "/images/" + data["image"];
   const details = EventModel.getDetails(data);
   const title = EventModel.addDateToTitle(data["startDate"], data["endDate"], data["title"])
@@ -73,6 +74,7 @@ export default function EventPage() {
 
   return (
     <EventPageView
+      id={id}
       title={title}
       details={details}
       description={description}
@@ -83,17 +85,4 @@ export default function EventPage() {
       user={user}
     />
   );
-
-  // var fs = require('browserify-fs');
-
-  // fs.readFile('/home/hello-world1.txt', 'utf-8', function(err, data) {
-  //   console.log(data);
-  // });
-  // fs.mkdir('/home', function() {
-  //     fs.writeFile('/home/hello-world.txt', 'Hello world11!\n', function() {
-  //         fs.readFile('/home/hello-world.txt', 'utf-8', function(err, data) {
-  //             console.log(data);
-  //         });
-  //     });
-  // });
 }
