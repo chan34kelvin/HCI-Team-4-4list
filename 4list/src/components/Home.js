@@ -42,38 +42,7 @@ const Home = () => {
               </Card.Link>
             </Card.Body>
           </Card>
-          <Card
-            className="col-12 col-sm-6 col-xl-4"
-            style={{
-              border: "none"
-            }}
-          >
-            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
-                <Card.Title>Personal</Card.Title>
-              </Card.Link>
-            </Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Furniture
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Books
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Cars
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/personal">
-                More...
-              </Card.Link>
-            </Card.Body>
-          </Card>
+          
 
           <Card
             className="col-12 col-sm-6 col-xl-4"
@@ -144,39 +113,6 @@ const Home = () => {
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
               <Card.Link className="link-dark ms-2" href="#">
-                <Card.Title>Community</Card.Title>
-              </Card.Link>
-            </Card.Header>
-            <Card.Body style={{ overflow: 'auto' }}>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Furniture
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Books
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Cars
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/community">
-                More...
-              </Card.Link>
-            </Card.Body>
-          </Card>
-
-          <Card
-            className="col-12 col-sm-6 col-xl-4"
-            style={{
-              border: "none"
-            }}
-          >
-            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
                 <Card.Title>Events</Card.Title>
               </Card.Link>
             </Card.Header>
@@ -197,6 +133,72 @@ const Home = () => {
                 </Card.Link>
               </Card.Text>
               <Card.Link className="link-dark ms-2" href="/event">
+                More...
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card
+            className="col-12 col-sm-6 col-xl-4"
+            style={{
+              border: "none"
+            }}
+          >
+            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
+              <Card.Link className="link-dark ms-2" href="#">
+                <Card.Title>Personal</Card.Title>
+              </Card.Link>
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Furniture
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Books
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Cars
+                </Card.Link>
+              </Card.Text>
+              <Card.Link className="link-dark ms-2" href="/personal">
+                More...
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card
+            className="col-12 col-sm-6 col-xl-4"
+            style={{
+              border: "none"
+            }}
+          >
+            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
+              <Card.Link className="link-dark ms-2" href="#">
+                <Card.Title>Community</Card.Title>
+              </Card.Link>
+            </Card.Header>
+            <Card.Body style={{ overflow: 'auto' }}>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Furniture
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Books
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="#">
+                  Cars
+                </Card.Link>
+              </Card.Text>
+              <Card.Link className="link-dark ms-2" href="/community">
                 More...
               </Card.Link>
             </Card.Body>
