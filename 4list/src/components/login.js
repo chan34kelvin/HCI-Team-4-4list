@@ -45,8 +45,7 @@ class Login extends Component {
                 </a>
               </p>
               <div className="text-center mt-4 mx-right">
-                <Image src="../images/apple.png" /> OR{' '}
-                <Image src="../images/Glogo.png" />
+                <Image src="/apple.png" /> OR <Image src="/Glogo.png" />
                 <Button type="submit" id="Button">
                   Login
                 </Button>

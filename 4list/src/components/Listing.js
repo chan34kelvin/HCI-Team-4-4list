@@ -8,10 +8,11 @@ import {
   Form,
   Card,
   Button,
+  Carousel,
 } from 'react-bootstrap'
 import './Listing.css'
 import Logo from '../images/Logo.png'
-
+import ReactDOM from 'react-dom'
 const Listing = () => {
   return (
     <Container>
@@ -20,8 +21,37 @@ const Listing = () => {
           <Row>
             <Col sm={6}>
               <p className="h4 text-left mb-4">Tittle of Listing</p>
-              <Card className="bg-dark text-white" style={{ height: '30rem' }}>
-                <Card.Body><img src="/apple.png"/> </Card.Body>
+              <Card className=" text-black" style={{ height: '30rem' }}>
+                <Card.Body>
+                  <Carousel>
+                    <Carousel.Item style={{ height: '350px' }}>
+                      <img
+                        className="d-block w-10"
+                        src="house.jpg?text=First slide&bg=373940"
+                        alt="First slide"
+                      />
+                      <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{ height: '350px' }}>
+                      <img
+                        className="d-block w-10"
+                        src="interior1.jpg?text=Second slide&bg=282c34"
+                        alt="Second slide"
+                      />
+
+                      <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{ height: '350px' }}>
+                      <img
+                        className="d-block w-10"
+                        src="interior2.jpg?text=Third slide&bg=20232a"
+                        alt="Third slide"
+                      />
+
+                      <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                  </Carousel>
+                </Card.Body>
               </Card>
             </Col>
             <Col sm={6}>
@@ -85,6 +115,7 @@ const Listing = () => {
           >
             Location
           </p>
+          <img src="map.webp" style={{ height: '13rem', marginLeft: '4rem' }} />
         </Col>
 
         <Col className="background" sm={8}>
@@ -96,7 +127,7 @@ const Listing = () => {
             <Card.Body className="cbody">
               <Card.Title>Special description</Card.Title>
               <Card.Text>
-                ONe of the best cars you are ever going to find on the market
+                Best house out there. clean Good neighborhood.
               </Card.Text>
             </Card.Body>
           </Card>
