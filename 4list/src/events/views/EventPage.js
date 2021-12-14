@@ -4,6 +4,7 @@ import EventImage from "./page-components/EventImage";
 import EventButton from "./page-components/EventButton";
 import EventLocation from "./page-components/EventLocation";
 import EventUser from "./page-components/EventUser";
+import EventTicket from "./page-components/EventTicket";
 
 export default function EventPage(props) {
 
@@ -54,6 +55,12 @@ export default function EventPage(props) {
           <EventUser user={props.user} />
         </div>
       </div>
+      <div className="row g-5 mb-5" id="user">
+        <div className="col-12 fs-3">
+          Ticket Negotitation
+        </div>
+      </div>
+      <EventTicket/>
     </div>
   );
 }

@@ -1,57 +1,67 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 //view
-import EventListView from "../views/EventList.js";
+import EventListView from '../views/EventList.js'
 //Model
-const EventModel = require("../models/EventModel.js");
+const EventModel = require('../models/EventModel.js')
 
-export default function EventList() {
-  const URLPath = process.env.PUBLIC_URL;
-  const [data, setData] = useState(() => []);
-  const [filterData, setFilterData] = useState(() => []);
-  const [error, setError] = useState(() => (false))
+export default function EventList(props) {
+  const [data, setData] = useState(() => [])
+  const [filterData, setFilterData] = useState(() => [])
+  const [error, setError] = useState(() => false)
   const [states, setStates] = useState(() => ({
-    category: "",
-    month: "",
-    day: "",
-    weekDay: "",
-    year: "",
-    time: "",
-    size: "",
-    venue: "",
-  }));
+    category: '',
+    month: '',
+    day: '',
+    weekDay: '',
+    year: '',
+    time: '',
+    size: '',
+    venue: '',
+  }))
 
   useEffect(() => {
-    fetch(URLPath + "/db/events.txt")
+    fetch('/db/events.txt')
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
-        const temp = JSON.parse(data);
-        setData(temp);
-        setFilterData(temp);
-      });
-  }, [URLPath]);
+        const temp = JSON.parse(data)
+        if (props.searchParam) {
+          let searchData = EventModel.searchData(temp, props.searchParam)
+          console.log(searchData)
+          setData(searchData)
+          setFilterData(searchData)
+        } else {
+          setData(temp)
+          setFilterData(temp)
+        }
+      })
+  }, [props.searchParam])
 
   useEffect(() => {
     //this will take effect as state is being modified by view from user input
     //filter with raw data first for category, active time, venue, size
     //2nd filter after list generated, day of week, mm dd yy
-    let filtered = data;
-    filtered = EventModel.filterData(filterData, states);
-    filtered = EventModel.generateList(filtered);
-    filtered = EventModel.filterTimedData(filtered, states);
-    setData(filtered);
+    let filtered = filterData
+    filtered = EventModel.filterData(filtered, states)
+    filtered = EventModel.generateList(filtered)
+    filtered = EventModel.filterTimedData(filtered, states)
+    setData(filtered)
 
     //show error page when nth was found
-    if(filtered.length > 0){
+    if (filtered.length > 0) {
       setError(false)
-    }else{
+    } else {
       setError(true)
     }
-  }, [filterData, states]);
+  }, [filterData, states])
 
-  const venues = EventModel.getVenues(filterData);
-  const categories= EventModel.getCategories(filterData)
+  const venues = EventModel.getVenues(filterData)
+  const categories = EventModel.getCategories(filterData)
+  let text = 'Events'
+  if (props.searchParam) {
+    text = 'Event Search: ' + props.searchParam
+  }
 
   return (
     <EventListView
@@ -61,6 +71,7 @@ export default function EventList() {
       categories={categories}
       states={states}
       setStates={setStates}
+      text={text}
     />
-  );
+  )
 }

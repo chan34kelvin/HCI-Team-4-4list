@@ -1,0 +1,10 @@
+// Your variable overrides
+$sidebar-bg-color: hsl(0, 0%, 94%);
+$sidebar-color: black !default;
+$submenu-bg-color: #C4C4C4 !default;
+$submenu-bg-color-collapsed: #C4C4C4 !default;
+$highlight-color: black !default;
+$submenu-indent: 24px !default;
+$sidebar-width: 400px !default;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';

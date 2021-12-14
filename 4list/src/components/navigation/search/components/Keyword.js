@@ -1,20 +1,30 @@
-import { GoSearch } from "react-icons/go";
+import { GoSearch } from 'react-icons/go'
+import { useHistory } from 'react-router-dom'
 
 export default function Keyword(props) {
-  const states = props.states;
-  const setStates = props.setStates;
+  const states = props.states
+  const setStates = props.setStates
+  const history = useHistory()
 
   function onSubmit(event) {
-    event.preventDefault();
-    console.log(states);
+    event.preventDefault()
+    console.log(states)
+    if (states.Keyword === '') {
+      history.push('/' + states['Category'])
+    } else {
+      if (states.Keyword.includes('/')) {
+        setStates({ ...states, Keyword: states["Keyword"].replace("/", "-") })
+      }
+      history.push('/search/' + states['Category'] + '/' + states.Keyword)
+    }
   }
 
   return (
     <form
       className="d-flex flex-row w-100 align-items-center gap-3"
       style={{
-        borderBottom: "1px solid",
-        minWidth: "90%",
+        borderBottom: '1px solid',
+        minWidth: '90%',
       }}
       onSubmit={onSubmit}
     >
@@ -24,14 +34,14 @@ export default function Keyword(props) {
         className="form-control text-lg-center p-2 fs-5"
         placeholder="Search"
         style={{
-          border: "none",
-          transition: "none",
-          borderRadius: "0",
+          border: 'none',
+          transition: 'none',
+          borderRadius: '0',
         }}
         onChange={(event) => {
-          setStates({ ...states, "Keyword": event.target.value });
+          setStates({ ...states, Keyword: event.target.value })
         }}
       ></input>
     </form>
-  );
+  )
 }
