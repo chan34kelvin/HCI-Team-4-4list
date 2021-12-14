@@ -28,7 +28,7 @@ export default function EventList(props) {
         const temp = JSON.parse(data)
         if (props.searchParam) {
           let searchData = temp.filter((data) => {
-            return data.title.toLowerCase().includes(props.searchParam.toLowerCase())
+            return data.title.toLowerCase().includes(props.searchParam.toLowerCase()) || data.description.toLowerCase().includes(props.searchParam.toLowerCase())
           })
           setData(searchData)
           setFilterData(searchData)
