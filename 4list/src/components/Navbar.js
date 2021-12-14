@@ -21,8 +21,11 @@ const NavigationBar = () => {
                             <Col lg={8}>
                                 <Nav.Link>My Account</Nav.Link>
                             </Col>
-                             <Col lg={4}>
-                                <Nav.Link>Post ad</Nav.Link>
+                            <Col lg={4}>
+                                {/* <Nav.Link className='post-ad-link'>Post ad</Nav.Link> */}
+                                <button className='post-ad-link'>
+                                    Post Ad
+                                </button>
                              </Col>
                         </Nav>  
                     </Navbar.Collapse>

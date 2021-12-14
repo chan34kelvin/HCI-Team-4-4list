@@ -1,19 +1,54 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Navbar, Nav, Form, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav, Form, Card, Button, Carousel } from 'react-bootstrap';
 import './Listing.css';
 import Logo from '../images/Logo.png'
- 
+import ReactDOM from "react-dom";
 const Listing = () => {
     return (
         <Container>
+            
   <Row>
     <Col className="background" sm={8}>
         <Row>
         <Col 
         sm={6}>
             <p className="h4 text-left mb-4">Tittle of Listing</p>
-            <Card className="bg-dark text-white" style={{ height: '30rem' }}>
-                <Card.Body>Imges here when i know how to </Card.Body>
+            <Card className=" text-black" style={{ height: '30rem' }}>
+                <Card.Body>
+                    <Carousel>
+                         <Carousel.Item style={{'height':"350px"}}>
+                          <img
+                        className="d-block w-10"
+                         src="house.jpg?text=First slide&bg=373940"
+                        alt="First slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{'height':"350px"}}>
+                        <img
+                        className="d-block w-10"
+                        src="interior1.jpg?text=Second slide&bg=282c34"
+                        alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{'height':"350px"}}>
+                        <img
+                        className="d-block w-10"
+                        src="interior2.jpg?text=Third slide&bg=20232a"
+                        alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+        </Card.Body>
             </Card>
         </Col>
         <Col sm={6}>
@@ -63,6 +98,9 @@ const Listing = () => {
     <Button className="btns" >Contact seller</Button>{' '}
     <Button className="btns2" >Save for later</Button>{' '}
     <p id='price'style={{ fontWeight:'bold' }} className="h1 text-center mb-4">Location</p>
+
+    <img src="map.webp" style={{ height: '13rem', marginLeft: '4rem' }}/>
+
     </Col>
 
 
@@ -74,7 +112,7 @@ const Listing = () => {
                 <Card.Body className='cbody'>
                  <Card.Title>Special description</Card.Title>
                     <Card.Text>
-                    ONe of the best cars you are ever going to find on the market
+                    Best house out there. clean Good neighborhood. 
                     </Card.Text>
                  </Card.Body>
             </Card>
@@ -98,5 +136,7 @@ const Listing = () => {
 </Container>
     );
 }
+
+  
 
 export default Listing;
