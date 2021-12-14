@@ -7,7 +7,7 @@ export default function State(props) {
       className="d-flex flex-row w-100 align-items-center gap-3"
       style={{
         borderBottom: "1px solid",
-        minWidth: '15%',
+        minWidth: '25%',
         maxWidth: '150px',
       }}
     >
