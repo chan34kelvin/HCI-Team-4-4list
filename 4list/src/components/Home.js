@@ -62,15 +62,15 @@ const Home = () => {
                   </Card.Header>
                   <Card.Body>
                     <Card.Text>
-                      <Card.Link href="#">Modern Stylish House</Card.Link>
+                      <Card.Link href="/listings/housing/1">Modern Stylish House</Card.Link>
                     </Card.Text>
                     <Card.Text>
-                      <Card.Link href="#">Books</Card.Link>
+                      <Card.Link href="/listings/housing/2">Minimal Design House</Card.Link>
                     </Card.Text>
                     <Card.Text>
-                      <Card.Link href="#">Cars</Card.Link>
+                      <Card.Link href="/listings/housing/3">Small Red House</Card.Link>
                     </Card.Text>
-                    <Card.Link href="/listing">More...</Card.Link>
+                    <Card.Link href="/listings/housing">More...</Card.Link>
                   </Card.Body>
                 </Card>
                 <br />
