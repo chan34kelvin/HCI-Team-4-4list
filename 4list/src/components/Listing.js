@@ -11,8 +11,7 @@ import {
   Carousel,
 } from 'react-bootstrap'
 import './Listing.css'
-import Logo from '../images/Logo.png'
-import ReactDOM from 'react-dom'
+
 const Listing = () => {
   return (
     <Container>

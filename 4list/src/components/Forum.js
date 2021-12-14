@@ -1,6 +1,3 @@
-import '../App.css';
-import Home from './Home';
-import NavigationBar from './Navbar';
 import React, { useState } from 'react'
 
 import DiscussionBoard from 'react-discussion-board'
