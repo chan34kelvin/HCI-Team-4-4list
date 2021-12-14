@@ -22,31 +22,122 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
+              <Card.Link className="link-dark ms-2" href="/listings/cars">
                 <Card.Title>For Sale</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body>
               <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Furniture
+                <Card.Link className="link-dark ms-2" href="/listings/cars/1">
+                  White Tesla
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Books
+                <Card.Link className="link-dark ms-2" href="/listings/cars/2">
+                  White Porsche
                 </Card.Link>
               </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Cars
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/listing">
+              <Card.Link className="link-dark ms-2" href="/listings/cars">
                 More...
               </Card.Link>
             </Card.Body>
           </Card>
+          
+
+          <Card
+            className="col-12 col-sm-6 col-xl-4"
+            style={{
+              border: "none"
+            }}
+          >
+            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
+              <Card.Link className="link-dark ms-2" href="/listings/housing">
+                <Card.Title>Housing</Card.Title>
+              </Card.Link>
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/listings/housing/1">
+                  Modern Stylish Home
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/listings/housing/2">
+                  Minimal Design Home
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/listings/housing/3">
+                  Small Red House
+                </Card.Link>
+              </Card.Text>
+              <Card.Link className="link-dark ms-2" href="/listings/housing">
+                More...
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card
+            className="col-12 col-sm-6 col-xl-4"
+            style={{
+              border: "none"
+            }}
+          >
+            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
+              <Card.Link className="link-dark ms-2" href="/listings/jobs">
+                <Card.Title>Jobs</Card.Title>
+              </Card.Link>
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/listings/jobs/1">
+                  Security needed for San Francisco Concert Venue
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/listings/jobs/2">
+                  Call Center Operator
+                </Card.Link>
+              </Card.Text>
+              <Card.Link className="link-dark ms-2" href="/listings/jobs">
+                More...
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card
+            className="col-12 col-sm-6 col-xl-4"
+            style={{
+              border: "none"
+            }}
+          >
+            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
+              <Card.Link className="link-dark ms-2" href="#">
+                <Card.Title>Events</Card.Title>
+              </Card.Link>
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/event/7">
+                  Crafting
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/event/2">
+                  Shen Yun
+                </Card.Link>
+              </Card.Text>
+              <Card.Text>
+                <Card.Link className="link-dark ms-2" href="/event/6">
+                  Soccer
+                </Card.Link>
+              </Card.Text>
+              <Card.Link className="link-dark ms-2" href="/event">
+                More...
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
           <Card
             className="col-12 col-sm-6 col-xl-4"
             style={{
@@ -88,72 +179,6 @@ const Home = () => {
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
               <Card.Link className="link-dark ms-2" href="#">
-                <Card.Title>Housing</Card.Title>
-              </Card.Link>
-            </Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Furniture
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Books
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Cars
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/listing">
-                More...
-              </Card.Link>
-            </Card.Body>
-          </Card>
-
-          <Card
-            className="col-12 col-sm-6 col-xl-4"
-            style={{
-              border: "none"
-            }}
-          >
-            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
-                <Card.Title>Jobs</Card.Title>
-              </Card.Link>
-            </Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Furniture
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Books
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="#">
-                  Cars
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/jobs">
-                More...
-              </Card.Link>
-            </Card.Body>
-          </Card>
-
-          <Card
-            className="col-12 col-sm-6 col-xl-4"
-            style={{
-              border: "none"
-            }}
-          >
-            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
                 <Card.Title>Community</Card.Title>
               </Card.Link>
             </Card.Header>
@@ -174,39 +199,6 @@ const Home = () => {
                 </Card.Link>
               </Card.Text>
               <Card.Link className="link-dark ms-2" href="/community">
-                More...
-              </Card.Link>
-            </Card.Body>
-          </Card>
-
-          <Card
-            className="col-12 col-sm-6 col-xl-4"
-            style={{
-              border: "none"
-            }}
-          >
-            <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="#">
-                <Card.Title>Events</Card.Title>
-              </Card.Link>
-            </Card.Header>
-            <Card.Body>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="/event/7">
-                  Crafting
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="/event/2">
-                  Shen Yun
-                </Card.Link>
-              </Card.Text>
-              <Card.Text>
-                <Card.Link className="link-dark ms-2" href="/event/6">
-                  Soccer
-                </Card.Link>
-              </Card.Text>
-              <Card.Link className="link-dark ms-2" href="/event">
                 More...
               </Card.Link>
             </Card.Body>

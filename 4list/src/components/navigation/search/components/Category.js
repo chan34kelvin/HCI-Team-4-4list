@@ -26,6 +26,8 @@ export default function Category(props) {
         <option value="event">Event</option>
         <option value="forum">Discussion forum</option>
         <option value="listings/housing">Housings</option>
+        <option value="listings/jobs">Jobs</option>
+        <option value="listings/cars">For sale</option>
         {/* <option value="listings/personal">Personal</option>
         <option value="listings/jobs">Jobs</option> */}
       </select>
