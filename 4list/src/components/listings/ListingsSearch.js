@@ -14,6 +14,7 @@ import {
   jobsListingsData,
   communityListingsData,
   forSalesListingsData,
+  carsListingsData
 } from './homeListingsData'
 // import Filter from "../../events/views/list-components/filter/Filter";
 // import newFilter from "../filters/newFilter";
@@ -27,7 +28,7 @@ const ListingsSearch = () => {
     '/listings/personal': personalListingsData,
     '/listings/jobs': jobsListingsData,
     '/listings/community': communityListingsData,
-    '/listings/forsale': forSalesListingsData,
+    '/listings/cars': carsListingsData,
   }
   const [filter, setFilter] = useState(false)
   const location = useLocation()
