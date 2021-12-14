@@ -17,6 +17,8 @@
     margin-left: 23% !important;
     background-color: #EA840D !important;
     width: 220px;
+    border-radius: 15px !important;
+    border-color: #EA840D !important;
 }
 .btns2{
     margin-top: 1rem;
@@ -24,6 +26,8 @@
     background-color: #c4c4c4 !important;
     width: 220px;
     margin-bottom: 3rem;
+    border-radius: 15px !important;
+    border-color: #c4c4c4 !important;
 }
 #dets{
     font-family: Roboto;
@@ -41,4 +45,24 @@
 }
 .continfo1{
     height: 9rem;
+}
+.continfo3{
+    height: 9.5rem;
+    margin-top: 3.9rem;
+}
+#prices{
+    width: 9rem;
+    height: 4.5rem;
+    margin-top: 3.3rem;
+    margin-left: 8rem;
+    font-size:xx-large;
+    color: rgb(58, 57, 57);
+}
+.form-floating > .form-control, .form-floating > .form-select {
+    height: calc(2.5rem + 2px) !important; 
+    line-height: 1.25;
+}
+.form-floating > .form-control, .form-floating {
+    line-height: 10px;
+    margin-bottom: 4px;
 }
