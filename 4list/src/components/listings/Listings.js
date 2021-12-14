@@ -4,7 +4,8 @@ import ListingFilter from '../filters/listingFilter';
 import { Card, Row, Col } from "react-bootstrap";
 import { GoSettings } from "react-icons/go";
 import { homeListingsData, personalListingsData, jobsListingsData, communityListingsData,
-forSalesListingsData } from "./homeListingsData";
+forSalesListingsData, 
+carsListingsData} from "./homeListingsData";
 // import Filter from "../../events/views/list-components/filter/Filter";
 // import newFilter from "../filters/newFilter";
 // import EventButton from "../filters/EventButton";
@@ -13,9 +14,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const Listings = () => {
     const listingTypes = {'/listings/housing':homeListingsData,'/listings/personal':personalListingsData,
     '/listings/jobs':jobsListingsData,'/listings/community':communityListingsData,
-    '/listings/forsale': forSalesListingsData};
+    '/listings/forsale': forSalesListingsData,'/listings/cars':carsListingsData};
     const [filter,setFilter] = useState(false);
     const location = useLocation();
+    // console.log(location);
     // const history = useHistory();
     let data = [];
     // const l = {'/listings/tag': homeListingsData};
@@ -86,7 +88,7 @@ const Listings = () => {
                                 <Col>
                                 <Card style={{width: '18rem',justifyContent:'space-around',
                                     alignSelf:'flex-start'}}>
-                                    <Link to={{pathname:`/listings/housing/${data.id}`,state:data}} >
+                                    <Link to={{pathname:`${location.pathname}/${data.id}`,state:data}} >
                                         <Card.Img variant="top" src={`/images/${data.image}`} 
                                         style={{width:'18rem',height:'10rem'}} />
                                     </Link >
