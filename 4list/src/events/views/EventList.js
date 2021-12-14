@@ -5,7 +5,7 @@ import Filter from "./list-components/filter/Filter";
 export default function EventList(props) {
   //changes the title of the page
   if (document.getElementById("pageTitle")) {
-    document.getElementById("pageTitle").innerHTML = "4List - Events";
+    document.getElementById("pageTitle").innerHTML = "4List - "+props.text;
   }
   const data = props.data;
   return (
@@ -15,7 +15,7 @@ export default function EventList(props) {
         <div className="col-12 py-3">
           <div className="row d-flex align-items-center g-4">
             <div className="col d-flex flex-wrap align-items-center">
-              <div className="display-5 fw-bold me-auto">Events</div>
+              <div className="display-5 fw-bold me-auto">{props.text}</div>
               <EventButton />
             </div>
           </div>
@@ -25,7 +25,7 @@ export default function EventList(props) {
       {props.error && (
         <div className="row">
           <div className="col-12 py-3 fs-1">
-            No Results found, Please redo your filters or refresh the page
+            No Results found, <a href="/event">Click here to go back to events</a>
           </div>
         </div>
       )}
