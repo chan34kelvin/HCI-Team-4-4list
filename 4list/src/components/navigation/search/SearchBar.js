@@ -2,14 +2,14 @@ import { useState } from "react";
 import City from "./components/City";
 import State from "./components/State";
 import Keyword from "./components/Keyword";
-import ZipCode from "./components/ZipCode";
+import Category from "./components/Category";
 
 export default function SearchBar() {
   const [states, setStates] = useState(() => ({
     Keyword: "",
     State: "",
     City: "",
-    Zip: "",
+    Category: "Event",
   }));
 
   return (
@@ -29,9 +29,9 @@ export default function SearchBar() {
         style={{ minWidth: "60%" }}
       >
         <div className="d-flex flex-column flex-md-row w-100 gap-3">
+          <Category states={states} setStates={setStates} />
           <State states={states} setStates={setStates} />
           <City states={states} setStates={setStates} />
-          <ZipCode states={states} setStates={setStates} />
         </div>
       </div>
     </div>

@@ -23,6 +23,10 @@ export default function City(props) {
       >
         <option value="">City</option>
         <option value="San Francisco">San Francisco</option>
+        <option value="Pacifica">Pacifica</option>
+        <option value="Oakland">Oakland</option>
+        <option value="Daly City">Daly City</option>
+        <option value="San Jose">San Jose</option>
       </select>
     </div>
   );

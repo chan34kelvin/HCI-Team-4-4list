@@ -1,12 +1,20 @@
 import { GoSearch } from "react-icons/go";
+import { useHistory } from "react-router-dom";
 
 export default function Keyword(props) {
   const states = props.states;
   const setStates = props.setStates;
+  const history = useHistory()
 
   function onSubmit(event) {
     event.preventDefault();
     console.log(states);
+    if(states.Keyword === ""){
+      history.replace("/"+states["Category"])
+    }else{
+      history.replace("/search/"+states["Category"]+"/"+states.Keyword)
+    }
+    history.go(0)
   }
 
   return (

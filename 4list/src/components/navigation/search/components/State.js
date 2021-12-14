@@ -7,7 +7,8 @@ export default function State(props) {
       className="d-flex flex-row w-100 align-items-center gap-3"
       style={{
         borderBottom: "1px solid",
-        minWidth: "30%",
+        minWidth: '15%',
+        maxWidth: '150px',
       }}
     >
       <select
@@ -22,6 +23,8 @@ export default function State(props) {
         }}
       >
         <option value="">State</option>
+        <option value="California">California</option>
+        <option value="Nevada">Nevada</option>
       </select>
     </div>
   );
