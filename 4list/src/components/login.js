@@ -13,10 +13,18 @@ import {
 } from 'react-bootstrap'
 import './login.css'
 
+import { useHistory } from 'react-router-dom'
+
 import Logo from '../images/Logo.png'
 
-class Login extends Component {
-  render() {
+const Login = () => {
+
+  const history= useHistory()
+
+  function login(event){
+    event.preventDefault()
+    history.go(-1)
+  }
     return (
       <Container>
         <Row>
@@ -46,7 +54,7 @@ class Login extends Component {
               </p>
               <div className="text-center mt-4 mx-right">
                 <Image src="/apple.png" /> OR <Image src="/Glogo.png" />
-                <Button type="submit" id="Button">
+                <Button type="submit" id="Button" onClick={login}>
                   Login
                 </Button>
               </div>
@@ -63,7 +71,6 @@ class Login extends Component {
         </Row>
       </Container>
     )
-  }
 }
 
 export default Login

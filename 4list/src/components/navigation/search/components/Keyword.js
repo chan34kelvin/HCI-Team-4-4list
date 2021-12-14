@@ -10,11 +10,10 @@ export default function Keyword(props) {
     event.preventDefault();
     console.log(states);
     if(states.Keyword === ""){
-      history.replace("/"+states["Category"])
+      history.push("/"+states["Category"])
     }else{
-      history.replace("/search/"+states["Category"]+"/"+states.Keyword)
+      history.push("/search/"+states["Category"]+"/"+states.Keyword)
     }
-    history.go(0)
   }
 
   return (

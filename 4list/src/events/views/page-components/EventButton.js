@@ -8,12 +8,6 @@ export default function EventButton(props) {
 
   return (
     <div className="d-flex flex-wrap gap-4">
-      {/* <Link to="/event" className="text-decoration-none d-flex flex-column fs-5">
-        <div className="text-center">
-          <IoArrowBackCircle />
-        </div>
-        <div className="">Events</div>
-      </Link> */}
       <a href="#user" className="text-decoration-none d-flex flex-column fs-5">
         <div className="text-center">
           <MdPersonPin />
@@ -32,6 +26,12 @@ export default function EventButton(props) {
         </div>
         <div className="">Location</div>
       </a>
+      <Link to="/event" className="text-decoration-none d-flex flex-column fs-5">
+        <div className="text-center">
+          <IoArrowBackCircle />
+        </div>
+        <div className="">Events</div>
+      </Link>
     </div>
   );
 }

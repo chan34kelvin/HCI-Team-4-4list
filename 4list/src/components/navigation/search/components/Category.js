@@ -21,10 +21,10 @@ export default function Category(props) {
         onChange={(event) => {
           setStates({ ...states, Category: event.target.value })
         }}
+        value={states.Category}
       >
         <option value="event">Event</option>
-        <option value="discussion">Discussion forum</option>
-        <option value="listing">Listing</option>
+        <option value="forum">Discussion forum</option>
       </select>
     </div>
   )

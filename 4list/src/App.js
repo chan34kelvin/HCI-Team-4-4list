@@ -5,6 +5,7 @@ import NavigationBar from "./components/Navbar";
 
 const Home = lazy(() => import("./components/Home"));
 const Forum = lazy(() => import("./components/Forum"));
+const ForumSearch = lazy(() => import("./components/ForumSearch"))
 const Navigation = lazy(() => import("./components/navigation/Navigation"))
 const EventPage = lazy(() => import("./events/controllers/EventPage"))
 const EventList = lazy(() => import("./events/controllers/EventList"))
@@ -20,10 +21,11 @@ function App() {
           <Navigation/>
           <Route exact path= "/" component= {Home}/>
           <Route exact path= "/forum" component= {Forum}/>
+          <Route exact path= "/search/forum/:key" component= {ForumSearch}/>
           <Route exact path= "/event" component={EventList}/>
           <Route exact path= "/event/:id" component={EventPage}/>
           <Route exact path= "/search/event/:key" component={EventSearch}/>
-          <Route exact path= "/listing" component={Listings}/>
+          <Route exact path= "/post" component={Listings}/>
           <Route exact path= "/login" component={Login}/>
         </Suspense>
       </div>
