@@ -25,7 +25,7 @@ export default function EventList(props) {
       {props.error && (
         <div className="row">
           <div className="col-12 py-3 fs-1">
-            No Results found, <a href="/event">Click here to go back to events</a>
+            No Results found, <a href="/event">Click here to refresh events</a>
           </div>
         </div>
       )}

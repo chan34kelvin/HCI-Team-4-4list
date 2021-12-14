@@ -21,12 +21,12 @@ export default function City(props) {
           setStates({ ...states, "City": event.target.value });
         }}
       >
-        <option value="">City</option>
+        <option value="">All Cities</option>
         <option value="San Francisco">San Francisco</option>
         <option value="Pacifica">Pacifica</option>
-        <option value="Oakland">Oakland</option>
-        <option value="Daly City">Daly City</option>
-        <option value="San Jose">San Jose</option>
+        <option value="Berkeley">Berkeley</option>
+        <option value="Alameda">Alameda</option>
+        <option value="Walnut Creek">Walnut Creek</option>
       </select>
     </div>
   );

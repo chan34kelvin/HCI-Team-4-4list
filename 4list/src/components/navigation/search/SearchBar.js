@@ -4,7 +4,7 @@ import State from "./components/State";
 import Keyword from "./components/Keyword";
 import Category from "./components/Category";
 
-export default function SearchBar() {
+export default function SearchBar(props) {
   const [states, setStates] = useState(() => ({
     Keyword: "",
     State: "",
@@ -30,8 +30,8 @@ export default function SearchBar() {
       >
         <div className="d-flex flex-column flex-md-row w-100 gap-3">
           <Category states={states} setStates={setStates} />
-          <State states={states} setStates={setStates} />
-          <City states={states} setStates={setStates} />
+          <State states={props.area} setStates={props.setArea} />
+          <City states={props.area} setStates={props.setArea} />
         </div>
       </div>
     </div>

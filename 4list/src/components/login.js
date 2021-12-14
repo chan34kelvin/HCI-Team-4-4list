@@ -22,7 +22,8 @@ const Login = (props) => {
   const history= useHistory()
 
   function login(event){
-    props.setLogin(true)
+    props.setLogin(Math.random())
+    sessionStorage.setItem("cookie", true)
     event.preventDefault()
     history.goBack()
   }

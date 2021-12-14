@@ -24,7 +24,6 @@ export default function State(props) {
       >
         <option value="">State</option>
         <option value="California">California</option>
-        <option value="Nevada">Nevada</option>
       </select>
     </div>
   );

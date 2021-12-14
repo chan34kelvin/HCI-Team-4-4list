@@ -15,21 +15,22 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 const PostListing = (props) => {
-
   if (document.getElementById('pageTitle')) {
     document.getElementById('pageTitle').innerHTML = '4List - Post an Ad'
   }
 
   const history = useHistory()
-  useEffect(() => {
-    if (!props.login) {
-      history.push('/login')
-    }
+
+  React.useEffect(() => {
+    console.log(sessionStorage.getItem("cookie") !== "true", sessionStorage.getItem("cookie"))
+    if (sessionStorage.getItem('cookie') !== "true") {
+    history.push('/login')
+  }
   }, [props.login])
 
-  function postAd(event){
-      event.preventDefault()
-      history.push("/listing/1")
+  function postAd(event) {
+    event.preventDefault()
+    history.push('/listing/1')
   }
 
   return (
@@ -102,7 +103,11 @@ const PostListing = (props) => {
             className="form-control text-center"
             color="grey"
           />
-          <Button className="btns" style={{ marginTop: '1rem' }} onClick={postAd}>
+          <Button
+            className="btns"
+            style={{ marginTop: '1rem' }}
+            onClick={postAd}
+          >
             Post Listing{' '}
           </Button>{' '}
           <Button className="btns2" style={{ marginBottom: '0.3rem' }}>

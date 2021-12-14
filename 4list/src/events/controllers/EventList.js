@@ -28,15 +28,17 @@ export default function EventList(props) {
         const temp = JSON.parse(data)
         if (props.searchParam) {
           let searchData = EventModel.searchData(temp, props.searchParam)
+          searchData= EventModel.getAreaData(searchData, props.area)
           console.log(searchData)
           setData(searchData)
           setFilterData(searchData)
         } else {
-          setData(temp)
-          setFilterData(temp)
+          let searchData= EventModel.getAreaData(temp, props.area)
+          setData(searchData)
+          setFilterData(searchData)
         }
       })
-  }, [props.searchParam])
+  }, [props.searchParam, props.area])
 
   useEffect(() => {
     //this will take effect as state is being modified by view from user input

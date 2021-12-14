@@ -7,15 +7,30 @@ import { homeListingsData, personalListingsData, jobsListingsData, communityList
     forSalesListingsData } from "./homeListingsData";
 import SimpleImageSlider from "react-simple-image-slider";
 
-const Listing = (data) => {
-    const { id } = useParams();
+const Listing = (data1) => {
+    const id = useParams()["id"];
     const listingTypes = {'/listings/housing':homeListingsData,'/listings/personal':personalListingsData,
     '/listings/jobs':jobsListingsData,'/listings/community':communityListingsData,
     '/listings/forsale': forSalesListingsData};
-    // let data = useLocation();
-    console.log(data.location.state.details);
-    // console.log(data.location.state.id);
-    if(data.location.state === undefined && data.location){
+
+    let data= data1
+    console.log(data)
+    const location = useLocation();
+    for (const [key, value] of Object.entries(listingTypes)) {
+        console.log(location.pathname.includes(key), id)
+        if(location.pathname.includes(key)){
+            let data2 = value;
+            data2 = data2.filter((info) => {
+                return info["id"] == id
+            })
+            data.location.state = data2[0]
+            break
+        }
+        // console.log(`${key}: ${value}`);
+      }
+
+    console.log(data.location.state.id);
+    if(data.location.state && data.location){
         <Redirect to='/' />
     }
 

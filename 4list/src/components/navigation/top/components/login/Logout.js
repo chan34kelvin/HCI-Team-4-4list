@@ -2,7 +2,8 @@ export default function Logout(props){
     
     function logout(event){
         event.preventDefault()
-        props.setLogin(false)
+        props.setLogin(Math.random())
+        sessionStorage.setItem("cookie", false)
     }
 
     return(

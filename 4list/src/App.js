@@ -12,9 +12,10 @@ const Navigation = lazy(() => import('./components/navigation/Navigation'))
 const EventPage = lazy(() => import('./events/controllers/EventPage'))
 const EventList = lazy(() => import('./events/controllers/EventList'))
 const EventSearch = lazy(() => import('./events/controllers/EventSearch'))
-// const Listing = lazy(() => import("./components/Listing"))
+const ListingExample = lazy(() => import("./components/Listing"))
 const ListingsPage = lazy(() => import('./components/listings/Listings'));
 const Listing = lazy(() => import('./components/listings/Listing'));
+const ListingsSearch = lazy(() => import("./components/listings/ListingsSearch"))
 const Post = lazy(() => import('./components/PostListing'))
 const Login = lazy(() => import('./components/login'))
 
@@ -23,21 +24,31 @@ const listingTypes = [{route:'/listings/housing',id:'housing'},{route:'/listings
   {route:'/listings/forsale',id:'forsale'}];
 
 function App() {
+  console.log(sessionStorage.getItem("cookie"))
   const [login, setLogin] = useState(() => false)
+  const [area, setArea] = useState(() => ({
+    State: "",
+    City: "",
+  }));
   return (
     <Router>
       <div id="App">
         <Suspense fallback={<h1 className="">loading...</h1>}>
-          <Navigation login={login} setLogin={setLogin} />
+          <Navigation login={login} setLogin={setLogin} area={area} setArea={setArea} />
           <Route exact path="/" component={Home} />
           <Route exact path="/forum" component={Forum} />
           <Route exact path="/search/forum/:key" component={ForumSearch} />
-          <Route exact path="/event" component={EventList} />
+          <Route exact path="/event">
+            <EventList area={area}/>
+          </Route>
+          <Route exact path="/search/event/:key">
+            <EventSearch area={area}/>
+          </Route>
           <Route exact path="/event/:id" component={EventPage} />
-          <Route exact path="/search/event/:key" component={EventSearch} />
-          {/* <Route exact path="/listing/:key" component={Listing} /> */}
-          {listingTypes.map(route => <Route exact key={route.id} path={route.route} component={ListingsPage}  />)}
-          {listingTypes.map(route => <Route exact key={route.id} path={`${route.route}/:id`} component={Listing}  />)}
+          <Route exact path="/listing/:key" component={ListingExample} />
+          {listingTypes.map(route => <Route key={route.id} exact path={`/search${route.route}/:key`} component={ListingsSearch}  />)}
+          {listingTypes.map(route => <Route key={route.id} exact path={route.route} component={ListingsPage}  />)}
+          {listingTypes.map(route => <Route key={route.id} exact path={`${route.route}/:id`} component={Listing}  />)}
           <Route exact path="/post">
             <Post login={login} />
           </Route>

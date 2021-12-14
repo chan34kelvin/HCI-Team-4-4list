@@ -2,11 +2,25 @@ import Logo from "./components/logo/Logo";
 import Login from "./components/login/Login";
 import Logout from "./components/login/Logout";
 import PostButton from "./components/post/PostButton";
+import React from "react"
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { GoSearch } from "react-icons/go";
 
 export default function TopBar(props) {
+
+
+  React.useEffect(() => {
+    //to make react load this page when login changes
+    console.log(sessionStorage.getItem("cookie") == "true")
+  }, [props.login])
+
+    let allow= false
+
+  if(sessionStorage.getItem("cookie") == "true"){
+    allow= true
+  }
+
   return (
     <div className="d-flex flex-column flex-lg-row w-100 gap-3">
       
@@ -38,8 +52,8 @@ export default function TopBar(props) {
           id="navMenu"
          
         >
-          {!props.login && (<Login />)}
-          {props.login && (<Logout setLogin={props.setLogin}/>)}
+          {!allow && (<Login />)}
+          {allow && (<Logout setLogin={props.setLogin}/>)}
           <PostButton />
         </div>
       </div>

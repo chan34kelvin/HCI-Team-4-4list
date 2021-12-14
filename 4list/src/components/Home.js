@@ -62,7 +62,7 @@ const Home = () => {
                   </Card.Header>
                   <Card.Body>
                     <Card.Text>
-                      <Card.Link href="#">Furniture</Card.Link>
+                      <Card.Link href="#">Modern Stylish House</Card.Link>
                     </Card.Text>
                     <Card.Text>
                       <Card.Link href="#">Books</Card.Link>

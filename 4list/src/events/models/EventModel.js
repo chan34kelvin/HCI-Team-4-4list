@@ -28,6 +28,14 @@ EventModel.searchData = (rawData, key) => {
     return result
   })
 }
+
+EventModel.getAreaData = (rawData, area) => {
+
+  //search for city
+  return rawData.filter((info) => {
+    return info["address"].toLowerCase().includes(area.City.toLowerCase())
+  })
+}
 //page methods
 EventModel.getDetails = (data) => {
   //gets all the details for the events
