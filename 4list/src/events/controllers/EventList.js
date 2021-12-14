@@ -27,9 +27,8 @@ export default function EventList(props) {
         // Do something with your data
         const temp = JSON.parse(data)
         if (props.searchParam) {
-          let searchData = temp.filter((data) => {
-            return data.title.toLowerCase().includes(props.searchParam.toLowerCase()) || data.description.toLowerCase().includes(props.searchParam.toLowerCase())
-          })
+          let searchData = EventModel.searchData(temp, props.searchParam)
+          console.log(searchData)
           setData(searchData)
           setFilterData(searchData)
         } else {
@@ -37,7 +36,7 @@ export default function EventList(props) {
           setFilterData(temp)
         }
       })
-  }, [])
+  }, [props.searchParam])
 
   useEffect(() => {
     //this will take effect as state is being modified by view from user input
