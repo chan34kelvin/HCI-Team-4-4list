@@ -9,6 +9,11 @@ import { useParams } from 'react-router-dom'
 const ForumSearch = () => {
   const searchParam = useParams()['key']
 
+  if (document.getElementById('pageTitle')) {
+    document.getElementById('pageTitle').innerHTML = '4List - '+searchParam
+  }
+
+
   const allPosts = [
     {
       profileImage:

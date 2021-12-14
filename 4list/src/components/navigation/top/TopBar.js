@@ -1,11 +1,12 @@
 import Logo from "./components/logo/Logo";
 import Login from "./components/login/Login";
+import Logout from "./components/login/Logout";
 import PostButton from "./components/post/PostButton";
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { GoSearch } from "react-icons/go";
 
-export default function TopBar() {
+export default function TopBar(props) {
   return (
     <div className="d-flex flex-column flex-lg-row w-100 gap-3">
       
@@ -37,7 +38,8 @@ export default function TopBar() {
           id="navMenu"
          
         >
-          <Login />
+          {!props.login && (<Login />)}
+          {props.login && (<Logout setLogin={props.setLogin}/>)}
           <PostButton />
         </div>
       </div>

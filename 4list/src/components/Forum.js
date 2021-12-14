@@ -7,6 +7,10 @@ import 'react-discussion-board/dist/index.css'
 
 const App = () => {
   
+  if (document.getElementById('pageTitle')) {
+    document.getElementById('pageTitle').innerHTML = '4List - Discussion Forum'
+  }
+
   const allPosts = [
     {
       profileImage:

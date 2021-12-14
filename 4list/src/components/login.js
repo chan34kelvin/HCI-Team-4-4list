@@ -17,19 +17,20 @@ import { useHistory } from 'react-router-dom'
 
 import Logo from '../images/Logo.png'
 
-const Login = () => {
+const Login = (props) => {
 
   const history= useHistory()
 
   function login(event){
+    props.setLogin(true)
     event.preventDefault()
-    history.go(-1)
+    history.goBack()
   }
     return (
       <Container>
         <Row>
           <Col md="12">
-            <form>
+            <form onSubmit={login}>
               <p className="h4 text-center mb-4">LOGIN</p>
               <label
                 style={{ fontWeight: 'bold' }}
@@ -54,7 +55,7 @@ const Login = () => {
               </p>
               <div className="text-center mt-4 mx-right">
                 <Image src="/apple.png" /> OR <Image src="/Glogo.png" />
-                <Button type="submit" id="Button" onClick={login}>
+                <Button type="submit" id="Button">
                   Login
                 </Button>
               </div>

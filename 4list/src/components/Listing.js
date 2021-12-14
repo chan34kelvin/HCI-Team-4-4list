@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import {
   Container,
   Row,
@@ -12,7 +13,8 @@ import {
 } from 'react-bootstrap'
 import './Listing.css'
 
-const Listing = () => {
+const Listing = (props) => {
+
   return (
     <Container>
       <Row>
@@ -26,7 +28,7 @@ const Listing = () => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="house.jpg?text=First slide&bg=373940"
+                        src="/house.jpg?text=First slide&bg=373940"
                         alt="First slide"
                       />
                       <Carousel.Caption></Carousel.Caption>
@@ -34,7 +36,7 @@ const Listing = () => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="interior1.jpg?text=Second slide&bg=282c34"
+                        src="/interior1.jpg?text=Second slide&bg=282c34"
                         alt="Second slide"
                       />
 
@@ -43,7 +45,7 @@ const Listing = () => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="interior2.jpg?text=Third slide&bg=20232a"
+                        src="/interior2.jpg?text=Third slide&bg=20232a"
                         alt="Third slide"
                       />
 
@@ -114,7 +116,7 @@ const Listing = () => {
           >
             Location
           </p>
-          <img src="map.webp" style={{ height: '13rem', marginLeft: '4rem' }} />
+          <img src="/map.webp" style={{ height: '13rem', marginLeft: '4rem' }} />
         </Col>
 
         <Col className="background" sm={8}>
