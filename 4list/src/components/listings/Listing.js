@@ -4,14 +4,16 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 // import { useParams } from "react-router-dom";
 import { useParams, Redirect, useLocation } from "react-router-dom";
 import { homeListingsData, personalListingsData, jobsListingsData, communityListingsData,
-    forSalesListingsData } from "./homeListingsData";
+    forSalesListingsData, 
+    carsListingsData} from "./homeListingsData";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const Listing = (data1) => {
-    const id = useParams()["id"];
+    const { id } = useParams();
+    // console.log(id);
     const listingTypes = {'/listings/housing':homeListingsData,'/listings/personal':personalListingsData,
     '/listings/jobs':jobsListingsData,'/listings/community':communityListingsData,
-    '/listings/forsale': forSalesListingsData};
+    '/listings/forsale': forSalesListingsData,'/listings/cars':carsListingsData};
 
     let data= data1
     console.log(data)
@@ -44,6 +46,12 @@ const Listing = (data1) => {
         lng: -122.4194
       }; 
 
+    //   for (const [key, value] of Object.entries(listingTypes)) {
+    //     if(url === key)
+    //         data = value;
+    //     // console.log(`${key}: ${value}`);
+    //   }
+
       const loopDetails = () => {
         Object.entries(data.location.state.details).forEach((entry) => {
             const [key, value] = entry;
@@ -55,9 +63,12 @@ const Listing = (data1) => {
       }
 
       const images = [
-        { url: `/images/${data.location.state.image}` },
+        { url: `/images/${data.location.state.images[0]}` },
+        { url: `/images/${data.location.state.images[1]}` },
+        { url: `/images/${data.location.state.images[2]}` },
       ];
       
+      console.log(data.location.state.details);
 
     return (    
         <div className='container-xxl d-flex flex-column gap-4'>
@@ -78,7 +89,7 @@ const Listing = (data1) => {
                  </Row> */}
 
                  <SimpleImageSlider
-                    width={'25rem'}
+                    width={'26rem'}
                     height={'20rem'}
                     images={images}
                     // showBullets={true}
@@ -91,8 +102,13 @@ const Listing = (data1) => {
                 <div className="border border-dark" style={{width:'22rem',height:'29rem',
                     backgroundColor:'#F0F0F0'}}>
                     {/* Loop through details array */}
-                    <div className="fw-bold" style={{fontSize:'25px'}}>{data.location.state.built}</div>
+                    <div className="fw-bold" style={{fontSize:'25px'}}></div>
                     <div className="fw-bold" style={{fontSize:'25px'}}>
+                        {Array.from(data.location.state.details).map((e) => (
+                        <div>   
+                            {e}
+                        </div>
+                    ))}
                         </div>
                 </div>
             </div>

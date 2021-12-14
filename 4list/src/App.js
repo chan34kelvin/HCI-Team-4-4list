@@ -21,7 +21,7 @@ const Login = lazy(() => import('./components/login'))
 
 const listingTypes = [{route:'/listings/housing',id:'housing'},{route:'/listings/personal',id:'personal'},
   {route:'/listings/jobs',id:'jobs'},{route:'/listings/community',id:'community'},
-  {route:'/listings/forsale',id:'forsale'}];
+  {route:'/listings/forsale',id:'forsale'},{route:'/listings/cars',id:'cars'}];
 
 function App() {
   console.log(sessionStorage.getItem("cookie"))
