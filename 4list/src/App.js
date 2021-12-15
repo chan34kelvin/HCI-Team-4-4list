@@ -55,6 +55,9 @@ function App() {
           <Route exact path="/login">
             <Login setLogin={setLogin} />
           </Route>
+          <footer style={{ textAlign: 'center' }} className="pt-5 my-5 fs-5">
+            HCI Class SFSU CS Dept. Fall 2021 Team 4
+          </footer>
         </Suspense>
       </div>
     </Router>

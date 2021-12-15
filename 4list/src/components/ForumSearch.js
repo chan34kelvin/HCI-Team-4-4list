@@ -61,7 +61,10 @@ const ForumSearch = () => {
   }
 
   return (
-    <div className="App">
+    <div className="App container-xxl d-flex flex-column gap-4">
+      <div className='fs-1 fw-bold ms-sm-2'>
+        Forum Search: {searchParam}
+      </div>
       <DiscussionBoard posts={posts} onSubmit={submitPost} />
       {posts.length<=0 && (
         <div className="row d-flex text-center">

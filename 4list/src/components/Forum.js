@@ -47,7 +47,10 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
+    <div className='App container-xxl d-flex flex-column gap-4'>
+      <div className='fs-1 fw-bold ms-sm-2'>
+        Discussion Forums
+      </div>
       <DiscussionBoard posts={posts} onSubmit={submitPost} />
     </div>
   )
