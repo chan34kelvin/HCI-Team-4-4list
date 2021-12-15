@@ -31,7 +31,7 @@ function App() {
     City: "",
   }));
   return (
-    <HashRouter>
+    <Router>
       <div id="App">
         <Suspense fallback={<h1 className="">loading...</h1>}>
           <Navigation login={login} setLogin={setLogin} area={area} setArea={setArea} />
@@ -60,7 +60,7 @@ function App() {
           </footer>
         </Suspense>
       </div>
-    </HashRouter>
+    </Router>
   )
 }
 
