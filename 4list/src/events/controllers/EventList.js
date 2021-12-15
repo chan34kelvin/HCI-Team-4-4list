@@ -21,7 +21,7 @@ export default function EventList(props) {
   }))
 
   useEffect(() => {
-    fetch('/db/events.txt')
+    fetch('/HCI-Team-4/db/events.txt')
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data

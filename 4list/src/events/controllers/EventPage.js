@@ -16,7 +16,7 @@ export default function EventPage() {
   const history = useHistory();
 
   useEffect(() => {
-    fetch("/db/events.txt")
+    fetch("/HCI-Team-4/db/events.txt")
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
@@ -28,7 +28,7 @@ export default function EventPage() {
         const address = temp["address"];
 
         //get the poster info from a list of users
-        fetch("/db/users.txt")
+        fetch("/HCI-Team-4/db/users.txt")
           .then((response) => response.text())
           .then((data) => {
             // find the matching user info
@@ -64,7 +64,7 @@ export default function EventPage() {
 
   //four element a view needs
   const id= data["id"]
-  const image = "/images/" + data["image"];
+  const image = "/HCI-Team-4/images/" + data["image"];
   const details = EventModel.getDetails(data);
   const title = EventModel.addDateToTitle(data["startDate"], data["endDate"], data["title"])
   const description = data["description"];

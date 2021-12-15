@@ -18,7 +18,7 @@ export default function Card(props) {
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           >
             <div className="ratio ratio-4x3 ">
-              <img src={"/images/" + image} width="100%" height="100%" style={{objectFit: "scale-down"}}/>
+              <img src={"/HCI-Team-4/images/" + image} width="100%" height="100%" style={{objectFit: "scale-down"}}/>
             </div>
           </Link>
           <Link
