@@ -126,7 +126,7 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="./event">
+              <Card.Link className="link-dark ms-2" href="/HCI-Team-4/Event">
                 <Card.Title className="ms-2 fs-3 fw-bold">Events</Card.Title>
               </Card.Link>
             </Card.Header>
@@ -146,7 +146,7 @@ const Home = () => {
                   Soccer
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="./event">
+              <Card.Link className="link-dark" href="/HCI-Team-4/Event">
                 More...
               </Card.Link>
             </Card.Body>
