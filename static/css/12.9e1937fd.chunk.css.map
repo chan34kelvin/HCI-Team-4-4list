@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/events/views/list-components/card/Card.css"],"names":[],"mappings":"AACA,MACI,gBACJ,CAEA,yCACI,MACI,eACJ,CACJ","file":"12.9e1937fd.chunk.css","sourcesContent":["\n.card{\n    max-height: 225px;\n}\n\n@media only screen and (max-width: 577px) {\n    .card{\n        max-height: none;\n    }\n}"]}

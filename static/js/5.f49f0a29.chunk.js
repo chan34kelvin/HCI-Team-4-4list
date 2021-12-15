@@ -1,0 +1,2 @@
+(this.webpackJsonp4list=this.webpackJsonp4list||[]).push([[5],{212:function(c,t,a){"use strict";a.d(t,"a",(function(){return n}));var i=a(142);function n(c){return Object(i.a)({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"}}]})(c)}}}]);
+//# sourceMappingURL=5.f49f0a29.chunk.js.map
