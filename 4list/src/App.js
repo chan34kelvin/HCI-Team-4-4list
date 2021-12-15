@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, HashRouter } from 'react-router-dom'
 import './App.css'
 import NavigationBar from './components/Navbar'
 import { homeListingsData, personalListingsData, jobsListingsData, communityListingsData,
@@ -31,7 +31,7 @@ function App() {
     City: "",
   }));
   return (
-    <Router>
+    <Router basename='/HCI-Team-4'>
       <div id="App">
         <Suspense fallback={<h1 className="">loading...</h1>}>
           <Navigation login={login} setLogin={setLogin} area={area} setArea={setArea} />
