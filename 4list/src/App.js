@@ -31,7 +31,7 @@ function App() {
     City: "",
   }));
   return (
-    <Router>
+    <Router basename='/HCI-Team-4'>
       <div id="App">
         <Suspense fallback={<h1 className="">loading...</h1>}>
           <Navigation login={login} setLogin={setLogin} area={area} setArea={setArea} />

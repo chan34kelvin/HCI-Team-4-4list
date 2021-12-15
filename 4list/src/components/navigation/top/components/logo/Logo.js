@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function Logo(){
 
-    const logo = "/images/Logo.png"
+    const logo = "/HCI-Team-4/images/Logo.png"
     
     return(
         <div className= "" style = {{minWidth: "18%"}} >

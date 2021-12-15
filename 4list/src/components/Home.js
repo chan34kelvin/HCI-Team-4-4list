@@ -26,22 +26,22 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/listings/cars">
+              <Card.Link className="link-dark ms-2" href="./listings/cars">
                 <Card.Title className="ms-2 fs-3 fw-bold">For Sale</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px" }}>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/cars/1">
+                <Card.Link className="link-dark" href="./listings/cars/1">
                   White Tesla
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/cars/2">
+                <Card.Link className="link-dark" href="./listings/cars/2">
                   White Porsche
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/listings/cars">
+              <Card.Link className="link-dark" href="./listings/cars">
                 More...
               </Card.Link>
             </Card.Body>
@@ -55,37 +55,37 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/listings/housing">
+              <Card.Link className="link-dark ms-2" href="./listings/housing">
                 <Card.Title className="ms-2 fs-3 fw-bold">Housing</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px" }}>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/housing/1">
+                <Card.Link className="link-dark" href="./listings/housing/1">
                   Modern Stylish Home
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/housing/2">
+                <Card.Link className="link-dark" href="./listings/housing/2">
                   Minimal Design Home
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/housing/3">
+                <Card.Link className="link-dark" href="./listings/housing/3">
                   Small Red House
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/housing/6">
+                <Card.Link className="link-dark" href="./listings/housing/6">
                   Suburban Home
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/housing/5">
+                <Card.Link className="link-dark" href="./listings/housing/5">
                   Simple and Clean
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/listings/housing">
+              <Card.Link className="link-dark" href="./listings/housing">
                 More...
               </Card.Link>
             </Card.Body>
@@ -98,22 +98,22 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/listings/jobs">
+              <Card.Link className="link-dark ms-2" href="./listings/jobs">
                 <Card.Title className="ms-2 fs-3 fw-bold">Jobs</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px" }}>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/jobs/1">
+                <Card.Link className="link-dark" href="./listings/jobs/1">
                   Security needed for San Francisco Concert Venue
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/listings/jobs/2">
+                <Card.Link className="link-dark" href="./listings/jobs/2">
                   Call Center Operator
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/listings/jobs">
+              <Card.Link className="link-dark" href="./listings/jobs">
                 More...
               </Card.Link>
             </Card.Body>
@@ -126,27 +126,27 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/event">
+              <Card.Link className="link-dark ms-2" href="./event">
                 <Card.Title className="ms-2 fs-3 fw-bold">Events</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px" }}>
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/7">
+                <Card.Link className="link-dark" href="./event/7">
                   Crafting
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/2">
+                <Card.Link className="link-dark" href="./event/2">
                   Shen Yun
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/6">
+                <Card.Link className="link-dark" href="./event/6">
                   Soccer
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/event">
+              <Card.Link className="link-dark" href="./event">
                 More...
               </Card.Link>
             </Card.Body>
@@ -159,22 +159,22 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/forum">
+              <Card.Link className="link-dark ms-2" href="./forum">
                 <Card.Title className="ms-2 fs-3 fw-bold">Personal</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px" }}>
               <Card.Text>
-                <Card.Link className="link-dark" href="/search/forum/john">
+                <Card.Link className="link-dark" href="./search/forum/john">
                   The John's discussion
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/search/forum/jane">
+                <Card.Link className="link-dark" href="./search/forum/jane">
                   Jane's space
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/forum">
+              <Card.Link className="link-dark" href="./forum">
                 More...
               </Card.Link>
             </Card.Body>
@@ -187,27 +187,27 @@ const Home = () => {
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/event">
+              <Card.Link className="link-dark ms-2" href="./event">
                 <Card.Title className="ms-2 fs-3 fw-bold">Community</Card.Title>
               </Card.Link>
             </Card.Header>
             <Card.Body style={{ overflow: 'scroll', height: "250px" }} className="fs-5 ms-2">
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/1">
+                <Card.Link className="link-dark" href="./event/1">
                   Christmas Party for East Bay Singles!
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/5">
+                <Card.Link className="link-dark" href="./event/5">
                   Winter Dance Concert
                 </Card.Link>
               </Card.Text>
               <Card.Text>
-                <Card.Link className="link-dark" href="/event/3">
+                <Card.Link className="link-dark" href="./event/3">
                   Kitten Adoption Fair at Pet Food Express
                 </Card.Link>
               </Card.Text>
-              <Card.Link className="link-dark" href="/event">
+              <Card.Link className="link-dark" href="./event">
                 More...
               </Card.Link>
             </Card.Body>

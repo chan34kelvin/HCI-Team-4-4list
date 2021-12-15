@@ -89,7 +89,7 @@ const Listings = () => {
                                 <Card style={{width: '18rem',justifyContent:'space-around',
                                     alignSelf:'flex-start'}}>
                                     <Link to={{pathname:`${location.pathname}/${data.id}`,state:data}} >
-                                        <Card.Img variant="top" src={`/images/${data.image}`} 
+                                        <Card.Img variant="top" src={`/HCI-Team-4/images/${data.image}`} 
                                         style={{width:'18rem',height:'10rem'}} />
                                     </Link >
                                     <Card.Body style={{backgroundColor: '#F0F0F0'}}>
