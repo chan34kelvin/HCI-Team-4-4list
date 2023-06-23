@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/521.6e7ba41c.chunk.css","mappings":"AACA,MACI,gBACJ,CAEA,yCACI,MACI,eACJ,CACJ","sources":["events/views/list-components/card/Card.css"],"sourcesContent":["\r\n.card{\r\n    max-height: 225px;\r\n}\r\n\r\n@media only screen and (max-width: 577px) {\r\n    .card{\r\n        max-height: none;\r\n    }\r\n}"],"names":[],"sourceRoot":""}
