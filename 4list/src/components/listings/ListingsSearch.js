@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import {
   useLocation,
   useParams,
-  useHistory,
-  withRouter,
 } from 'react-router-dom'
 import ListingFilter from '../filters/listingFilter'
 import { Card, Row, Col } from 'react-bootstrap'
@@ -13,13 +11,12 @@ import {
   personalListingsData,
   jobsListingsData,
   communityListingsData,
-  forSalesListingsData,
   carsListingsData
 } from './homeListingsData'
 // import Filter from "../../events/views/list-components/filter/Filter";
 // import newFilter from "../filters/newFilter";
 // import EventButton from "../filters/EventButton";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Link } from 'react-router-dom'
 import ConvertIntoNum from './ConvertIntoNum'
 
 const ListingsSearch = () => {
@@ -50,11 +47,11 @@ const ListingsSearch = () => {
     data = data.filter((info) => {
       const price = ConvertIntoNum(info['price'])
       const searched = ConvertIntoNum(searchParam)
-      console.log(price-10000 <= searched)
+      console.log(price - 10000 <= searched)
       return (
         info['title'].toLowerCase().includes(searchParam.toLowerCase()) ||
         info['description'].toLowerCase().includes(searchParam.toLowerCase()) ||
-        (price-250000 <= searched && searched <= price + 250000)
+        (price - 250000 <= searched && searched <= price + 250000)
       )
     })
     // console.log(`${key}: ${value}`);
@@ -89,7 +86,7 @@ const ListingsSearch = () => {
               </div>
 
               {/* Filter button */}
-              <a
+              <div
                 role="button"
                 onClick={openCloseFilter}
                 style={{ color: 'blue' }}
@@ -100,7 +97,7 @@ const ListingsSearch = () => {
                   </div>
                   <div className="">Filter</div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -127,7 +124,7 @@ const ListingsSearch = () => {
                   >
                     <Card.Img
                       variant="top"
-                      src={`/images/${data.image}`}
+                      src={`/HCI-Team-4/images/${data.image}`}
                       style={{ width: '18rem', height: '10rem' }}
                     />
                   </Link>

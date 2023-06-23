@@ -12,18 +12,18 @@ export default function TopBar(props) {
 
   React.useEffect(() => {
     //to make react load this page when login changes
-    console.log(sessionStorage.getItem("cookie") == "true")
+    console.log(sessionStorage.getItem("cookie") === "true")
   }, [props.login])
 
-    let allow= false
+  let allow = false
 
-  if(sessionStorage.getItem("cookie") == "true"){
-    allow= true
+  if (sessionStorage.getItem("cookie") === "true") {
+    allow = true
   }
 
   return (
     <div className="d-flex flex-column flex-lg-row w-100 gap-3">
-      
+
       {/* home button and menu */}
       <div className="d-flex flex-row flex-grow-1">
         <Logo />
@@ -50,10 +50,10 @@ export default function TopBar(props) {
         <div
           className="navbar-collapse collapse align-items-start"
           id="navMenu"
-         
+
         >
           {!allow && (<Login />)}
-          {allow && (<Logout setLogin={props.setLogin}/>)}
+          {allow && (<Logout setLogin={props.setLogin} />)}
           <PostButton />
         </div>
       </div>

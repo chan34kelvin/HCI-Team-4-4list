@@ -2,16 +2,13 @@ import {
   Container,
   Row,
   Col,
-  Navbar,
-  Nav,
   Form,
   Card,
   Button,
-  Carousel,
   FloatingLabel,
 } from 'react-bootstrap'
 import './Listing.css'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 
 const PostListing = (props) => {
@@ -24,9 +21,9 @@ const PostListing = (props) => {
   React.useEffect(() => {
     console.log(sessionStorage.getItem("cookie") !== "true", sessionStorage.getItem("cookie"))
     if (sessionStorage.getItem('cookie') !== "true") {
-    history.push('/login')
-  }
-  }, [props.login])
+      history.push('/login')
+    }
+  }, [props.login, history])
 
   function postAd(event) {
     event.preventDefault()
@@ -42,7 +39,7 @@ const PostListing = (props) => {
               <p className="h4 text-left mb-4">Tittle of Listing</p>
               <Card className=" text-black" style={{ height: '30rem' }}>
                 <Card.Body>
-                  <img src="upload.png? slide&bg=282c34" />
+                  <img src="/HCI-Team-4/upload.png? slide&bg=282c34" alt="upload-button"/>
                   Click to upload image
                 </Card.Body>
               </Card>
@@ -120,7 +117,7 @@ const PostListing = (props) => {
           >
             Location
           </p>
-          <img src="map.webp" style={{ height: '13rem', marginLeft: '4rem' }} />
+          <img src="/HCI-Team-4/map.webp" style={{ height: '13rem', marginLeft: '4rem' }} alt="map"/>
         </Col>
 
         <Col className="background" sm={8}>

@@ -1,5 +1,3 @@
-import { HiLocationMarker } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import { GoSettings } from "react-icons/go";
 
 export default function EventButton(props) {

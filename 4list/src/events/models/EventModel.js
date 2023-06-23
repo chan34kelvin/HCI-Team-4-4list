@@ -98,7 +98,9 @@ EventModel.generateList = (data) => {
   //return an object with the date and an array of the amount of post it has
 
   if (data.length > 0) {
-    let currentDate = new Date(Date.now())
+    // let currentDate = new Date(Date.now())
+    let currentDate = new Date("11-29-2021") //making sure the sample data can load after the due date
+    // console.log(currentDate)
     let i = 0 //safety limit
     let j = 0 //how many days after
 
@@ -232,14 +234,18 @@ EventModel.filterTimedData = (filterData, states) => {
     for (let key in states) {
       if (whatToCheck.includes(key)) {
         if (states[key] !== '') {
-          filteredData = filteredData.filter((data) => {
-            return data[key] == states[key]
+          // console.log(filteredData, "before", states)
+          const prev = [...filteredData]
+          filteredData = prev.filter((data) => {
+            // console.log(data[key] == states[key], data[key].toString() === states[key], data[key], states[key], key, data)
+            return data[key].toString() === states[key]
           })
+          // console.log(filteredData)
         }
       }
     }
   }
-
+  
   return filteredData
 }
 

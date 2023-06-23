@@ -23,7 +23,7 @@ const Listing = (data1) => {
         if(location.pathname.includes(key)){
             let data2 = value;
             data2 = data2.filter((info) => {
-                return info["id"] == id
+                return info["id"] === id
             })
             data.location.state = data2[0]
             break
@@ -52,15 +52,15 @@ const Listing = (data1) => {
     //     // console.log(`${key}: ${value}`);
     //   }
 
-      const loopDetails = () => {
-        Object.entries(data.location.state.details).forEach((entry) => {
-            const [key, value] = entry;
-            // console.log(`${key}: ${value}`);
-            return (
-               <div>{`${key} : ${value}`}</div>
-            )
-          });
-      }
+    //   const loopDetails = () => {
+    //     Object.entries(data.location.state.details).forEach((entry) => {
+    //         const [key, value] = entry;
+    //         // console.log(`${key}: ${value}`);
+    //         return (
+    //            <div>{`${key} : ${value}`}</div>
+    //         )
+    //       });
+    //   }
 
       const images = [
         { url: `/HCI-Team-4/images/${data.location.state.images[0]}` },
@@ -130,7 +130,7 @@ const Listing = (data1) => {
 
                 <div className="fw-bold">Location</div>
                 
-                <LoadScript googleMapsApiKey="AIzaSyD83drqxn_tmCcwf8NB1_vNwed9BRkU1VE">
+                <LoadScript googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY}>
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     zoom={18}

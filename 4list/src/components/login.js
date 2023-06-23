@@ -1,21 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   Container,
   Row,
   Col,
-  Navbar,
-  Nav,
-  Form,
   Button,
-  Grid,
-  p,
   Image,
 } from 'react-bootstrap'
 import './login.css'
 
 import { useHistory } from 'react-router-dom'
-
-import Logo from '../images/Logo.png'
 
 const Login = (props) => {
   const history = useHistory()
@@ -55,7 +48,7 @@ const Login = (props) => {
             </p>
             <div className="d-flex flex-column text-center mt-4 gap-4">
               <div className="d-flex flex-row align-items-center justify-content-center gap-4">
-                <Image src="/apple.png" /> OR <Image src="/Glogo.png" />
+                <Image src="/HCI-Team-4/apple.png" /> OR <Image src="/HCI-Team-4/Glogo.png" />
               </div>
               <Button className="mx-auto" type="submit" id="Button">
                 Login

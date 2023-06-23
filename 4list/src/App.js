@@ -1,9 +1,8 @@
 import { lazy, Suspense, useState } from 'react'
-import { BrowserRouter as Router, Route, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
-import NavigationBar from './components/Navbar'
-import { homeListingsData, personalListingsData, jobsListingsData, communityListingsData,
-  forSalesListingsData } from "./components/listings/homeListingsData";
+// import { homeListingsData, personalListingsData, jobsListingsData, communityListingsData,
+//   forSalesListingsData } from "./components/listings/homeListingsData";
 
 const Home = lazy(() => import('./components/Home'))
 const Forum = lazy(() => import('./components/Forum'))
@@ -24,7 +23,7 @@ const listingTypes = [{route:'/listings/housing',id:'housing'},{route:'/listings
   {route:'/listings/forsale',id:'forsale'},{route:'/listings/cars',id:'cars'}];
 
 function App() {
-  console.log(sessionStorage.getItem("cookie"))
+  // console.log(sessionStorage.getItem("cookie"))
   const [login, setLogin] = useState(() => false)
   const [area, setArea] = useState(() => ({
     State: "",

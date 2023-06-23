@@ -18,12 +18,12 @@ export default function Card(props) {
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           >
             <div className="ratio ratio-4x3 ">
-              <img src={"/HCI-Team-4/images/" + image} width="100%" height="100%" style={{objectFit: "scale-down"}}/>
+              <img src={"/HCI-Team-4/images/" + image} width="100%" height="100%" style={{ objectFit: "scale-down" }} alt="event" />
             </div>
           </Link>
           <Link
             to={"/event/" + id}
-            className="text-decoration-none col-12 col-sm-8 col-lg-9 p-0 ps-1 ps-sm-5"
+            className="text-decoration-none col-12 col-sm-8 col-lg-9 p-0 ps-1 ps-sm-5 mt-3 mt-sm-0"
           >
             <div className="d-flex flex-column gap-3">
               <div className="" style={{ fontSize: "150%" }}>

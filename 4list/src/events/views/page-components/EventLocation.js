@@ -20,7 +20,7 @@ export default function EventLocation(props) {
       <div className="col-md-5">
         <div className="ratio ratio-1x1">
           {props.center && (
-            <LoadScript googleMapsApiKey="AIzaSyD83drqxn_tmCcwf8NB1_vNwed9BRkU1VE">
+            <LoadScript googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY}>
               <GoogleMap
                 mapContainerStyle={mapStyles}
                 zoom={18}
