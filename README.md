@@ -6,17 +6,13 @@ Our advertisement website based off Craigslist strives to give users a better pl
 
 # Team Members and Builders
 
-- Team Lead 
-Ashwini Managuli
+- Team Lead: Ashwini Managuli
 
-- Team Member
-Kelvin Ching Kiu Chan
+- Team Member: Kelvin Ching Kiu Chan
 
-- Team Member
-Alfonso Duarte-Sarabia
+- Team Member: Alfonso Duarte-Sarabia
 
-- Team Member
-Douglas Hurtado Aragon
+- Team Member: Douglas Hurtado Aragon
 
 # Designs
 
@@ -43,9 +39,7 @@ https://www.w3schools.com/jsref/jsref_getday.asp
 
 https://bizdetail.com/list-of-bay-area-cities-copy-paste/
 
-https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
-
-# npm tools installed
+# Npm tools installed
 
 npm i react-router-dom@5.2.0
 
