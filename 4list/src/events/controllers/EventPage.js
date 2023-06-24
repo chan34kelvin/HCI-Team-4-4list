@@ -6,7 +6,7 @@ import EventPageView from "../views/EventPage";
 
 //Models
 const axios = require("axios");
-const EventModel = require("../models/EventModel.js");
+const EventModel = require("../models/EventModel.js").default;
 
 export default function EventPage() {
   const [data, setData] = useState(() => []);
@@ -16,7 +16,7 @@ export default function EventPage() {
   const history = useHistory();
 
   useEffect(() => {
-    fetch("/HCI-Team-4/db/events.txt")
+    fetch(`${process.env.PUBLIC_URL}/db/events.txt`)
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
@@ -28,7 +28,7 @@ export default function EventPage() {
         const address = temp["address"];
 
         //get the poster info from a list of users
-        fetch("/HCI-Team-4/db/users.txt")
+        fetch(`${process.env.PUBLIC_URL}/db/users.txt`)
           .then((response) => response.text())
           .then((data) => {
             // find the matching user info
@@ -70,7 +70,7 @@ export default function EventPage() {
 
   //four element a view needs
   const id= data["id"]
-  const image = "/HCI-Team-4/images/" + data["image"];
+  const image = `${process.env.PUBLIC_URL}/images/` + data["image"];
   const details = EventModel.getDetails(data);
   const title = EventModel.addDateToTitle(data["startDate"], data["endDate"], data["title"])
   const description = data["description"];

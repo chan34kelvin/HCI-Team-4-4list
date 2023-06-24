@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ashwinigm.github.io/HCI-Team-4",
+  "homepage": "https://chan34kelvin.github.io/HCI-Team-4-4list",
   "name": "4list",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +33,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -56,6 +56,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "gh-pages": "^3.2.3"
   }
 }

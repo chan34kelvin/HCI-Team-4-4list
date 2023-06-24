@@ -63,9 +63,9 @@ const Listing = (data1) => {
     //   }
 
       const images = [
-        { url: `/HCI-Team-4/images/${data.location.state.images[0]}` },
-        { url: `/HCI-Team-4/images/${data.location.state.images[1]}` },
-        { url: `/HCI-Team-4/images/${data.location.state.images[2]}` },
+        { url: `${process.env.PUBLIC_URL}/images/${data.location.state.images[0]}` },
+        { url: `${process.env.PUBLIC_URL}/images/${data.location.state.images[1]}` },
+        { url: `${process.env.PUBLIC_URL}/images/${data.location.state.images[2]}` },
       ];
       
       console.log(data.location.state.details);

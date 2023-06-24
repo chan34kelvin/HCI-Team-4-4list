@@ -24,7 +24,7 @@ const Listing = (props) => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="/HCI-Team-4/house.jpg?text=First slide&bg=373940"
+                        src={`${process.env.PUBLIC_URL}/house.jpg?text=First slide&bg=373940`}
                         alt="First slide"
                       />
                       <Carousel.Caption></Carousel.Caption>
@@ -32,7 +32,7 @@ const Listing = (props) => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="/HCI-Team-4/interior1.jpg?text=Second slide&bg=282c34"
+                        src={`${process.env.PUBLIC_URL}/interior1.jpg?text=Second slide&bg=282c34`}
                         alt="Second slide"
                       />
 
@@ -41,7 +41,7 @@ const Listing = (props) => {
                     <Carousel.Item style={{ height: '350px' }}>
                       <img
                         className="d-block w-10"
-                        src="/HCI-Team-4/interior2.jpg?text=Third slide&bg=20232a"
+                        src={`${process.env.PUBLIC_URL}/interior2.jpg?text=Third slide&bg=20232a`}
                         alt="Third slide"
                       />
 
@@ -112,7 +112,7 @@ const Listing = (props) => {
           >
             Location
           </p>
-          <img src="/HCI-Team-4/map.webp" style={{ height: '13rem', marginLeft: '4rem' }} alt="map"/>
+          <img src={`${process.env.PUBLIC_URL}/map.webp`} style={{ height: '13rem', marginLeft: '4rem' }} alt="map"/>
         </Col>
 
         <Col className="background" sm={8}>

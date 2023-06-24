@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 //view
 import EventListView from '../views/EventList.js'
 //Model
-const EventModel = require('../models/EventModel.js')
+const EventModel = require('../models/EventModel.js').default
 
-export default function EventList(props) {
+const EventList = (props) => {
   const [data, setData] = useState(() => [])
   const [filterData, setFilterData] = useState(() => [])
   const [error, setError] = useState(() => false)
@@ -21,7 +21,7 @@ export default function EventList(props) {
   }))
 
   useEffect(() => {
-    fetch('/HCI-Team-4/db/events.txt')
+    fetch(`${process.env.PUBLIC_URL}/db/events.txt`)
       .then((response) => response.text())
       .then((data) => {
         // Do something with your data
@@ -77,3 +77,5 @@ export default function EventList(props) {
     />
   )
 }
+
+export default EventList;

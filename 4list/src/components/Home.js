@@ -18,9 +18,10 @@ const Home = () => {
             Welcome to 4List
           </div>
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
+              marginBottom: "3.5vw"
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -28,7 +29,7 @@ const Home = () => {
                 <Card.Title className="ms-2 fs-3 fw-bold">For Sale</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }}>
+            <Card.Body className="fs-5 ms-2" style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }}>
               <Card.Text>
                 <Card.Link className="link-dark" href="./listings/cars/1">
                   White Tesla
@@ -47,9 +48,9 @@ const Home = () => {
 
 
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -57,7 +58,7 @@ const Home = () => {
                 <Card.Title className="ms-2 fs-3 fw-bold">Housing</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }}>
+            <Card.Body className="fs-5 ms-2" style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }}>
               <Card.Text>
                 <Card.Link className="link-dark" href="./listings/housing/1">
                   Modern Stylish Home
@@ -90,9 +91,9 @@ const Home = () => {
           </Card>
 
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -100,7 +101,7 @@ const Home = () => {
                 <Card.Title className="ms-2 fs-3 fw-bold">Jobs</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }}>
+            <Card.Body className="fs-5 ms-2" style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }}>
               <Card.Text>
                 <Card.Link className="link-dark" href="./listings/jobs/1">
                   Security needed for San Francisco Concert Venue
@@ -118,17 +119,17 @@ const Home = () => {
           </Card>
 
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
-              <Card.Link className="link-dark ms-2" href="/HCI-Team-4/Event">
+              <Card.Link className="link-dark ms-2" href="./event">
                 <Card.Title className="ms-2 fs-3 fw-bold">Events</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }}>
+            <Card.Body className="fs-5 ms-2" style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }}>
               <Card.Text>
                 <Card.Link className="link-dark" href="./event/7">
                   Crafting
@@ -151,9 +152,9 @@ const Home = () => {
           </Card>
 
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -161,7 +162,7 @@ const Home = () => {
                 <Card.Title className="ms-2 fs-3 fw-bold">Personal</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body className="fs-5 ms-2" style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }}>
+            <Card.Body className="fs-5 ms-2" style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }}>
               <Card.Text>
                 <Card.Link className="link-dark" href="./search/forum/john">
                   The John's discussion
@@ -179,9 +180,10 @@ const Home = () => {
           </Card>
 
           <Card
-            className="col-12 col-sm-6 col-xl-4 mb-5"
+            className="col-12 col-sm-6 col-xl-4"
             style={{
-              border: "none"
+              border: "none",
+              marginBottom: "2vw"
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -189,7 +191,7 @@ const Home = () => {
                 <Card.Title className="ms-2 fs-3 fw-bold">Community</Card.Title>
               </Card.Link>
             </Card.Header>
-            <Card.Body style={{ overflow: 'scroll', height: "250px", minHeight: "10vw" }} className="fs-5 ms-2">
+            <Card.Body style={{ overflowY: 'scroll', height: "250px", minHeight: "10vw" }} className="fs-5 ms-2">
               <Card.Text>
                 <Card.Link className="link-dark" href="./event/1">
                   Christmas Party for East Bay Singles!

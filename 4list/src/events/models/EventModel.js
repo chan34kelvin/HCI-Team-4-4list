@@ -1,5 +1,5 @@
 //outside models
-const DateHelperModel = require('../helpers/DateHelper')
+import { getDaysOfWeek, checkIfWithinDate } from '../helpers/DateHelper'
 
 const EventModel = {}
 
@@ -53,7 +53,7 @@ EventModel.getDetails = (data) => {
   if (data['category']) {
     for (let key in details) {
       if (key === 'daysOfWeek') {
-        details['daysOfWeek'] = DateHelperModel.getDaysOfWeek(
+        details['daysOfWeek'] = getDaysOfWeek(
           new Date(data['startDate']),
           new Date(data['endDate']),
         )
@@ -115,7 +115,7 @@ EventModel.generateList = (data) => {
         let result = {
           data: arr,
           length: arr.length,
-          weekDay: DateHelperModel.getDaysOfWeek(currentDate, currentDate)[0],
+          weekDay: getDaysOfWeek(currentDate, currentDate)[0],
           date:
             currentDate.getMonth() +
             1 +
@@ -161,7 +161,7 @@ EventModel.findListOfCurrentDate = (currentDate, data) => {
 
     // console.log(currentData["id"])
     if (
-      DateHelperModel.checkIfWithinDate(
+      checkIfWithinDate(
         currentDate,
         new Date(currentData['startDate']),
         new Date(currentData['endDate']),
@@ -314,4 +314,4 @@ EventModel.getCategories = (data) => {
   return Array.from(uniqueCategory)
 }
 
-module.exports = EventModel
+export default EventModel

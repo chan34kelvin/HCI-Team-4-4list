@@ -1,6 +1,6 @@
 # HCI-Team-4 4-List
 
-Visit the site: 
+Visit the site: https://chan34kelvin.github.io/HCI-Team-4-4list/
 
 Our advertisement website based off Craigslist strives to give users a better platform to buy, sell products or services in a wide range of departments, search for jobs, housing or promote community events. The site also provides a platform for interaction via discussion forums and has dynamic posts and news that users can browse to be up to date with facts. With these features, our site aims at giving users a much better experience of navigating through such a happening site.
 

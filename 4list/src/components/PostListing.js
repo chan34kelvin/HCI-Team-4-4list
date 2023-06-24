@@ -39,7 +39,7 @@ const PostListing = (props) => {
               <p className="h4 text-left mb-4">Tittle of Listing</p>
               <Card className=" text-black" style={{ height: '30rem' }}>
                 <Card.Body>
-                  <img src="/HCI-Team-4/upload.png? slide&bg=282c34" alt="upload-button"/>
+                  <img src={`${process.env.PUBLIC_URL}/upload.png? slide&bg=282c34`} alt="upload-button"/>
                   Click to upload image
                 </Card.Body>
               </Card>
@@ -117,7 +117,7 @@ const PostListing = (props) => {
           >
             Location
           </p>
-          <img src="/HCI-Team-4/map.webp" style={{ height: '13rem', marginLeft: '4rem' }} alt="map"/>
+          <img src={`${process.env.PUBLIC_URL}/map.webp`} style={{ height: '13rem', marginLeft: '4rem' }} alt="map"/>
         </Col>
 
         <Col className="background" sm={8}>

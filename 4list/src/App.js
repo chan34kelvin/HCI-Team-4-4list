@@ -30,7 +30,7 @@ function App() {
     City: "",
   }));
   return (
-    <Router basename='/HCI-Team-4'>
+    <Router basename={process.env.PUBLIC_URL}>
       <div id="App">
         <Suspense fallback={<h1 className="">loading...</h1>}>
           <Navigation login={login} setLogin={setLogin} area={area} setArea={setArea} />

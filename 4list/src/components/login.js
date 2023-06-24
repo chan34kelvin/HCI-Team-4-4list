@@ -48,7 +48,7 @@ const Login = (props) => {
             </p>
             <div className="d-flex flex-column text-center mt-4 gap-4">
               <div className="d-flex flex-row align-items-center justify-content-center gap-4">
-                <Image src="/HCI-Team-4/apple.png" /> OR <Image src="/HCI-Team-4/Glogo.png" />
+                <Image src={`${process.env.PUBLIC_URL}/apple.png`} /> OR <Image src={`${process.env.PUBLIC_URL}/Glogo.png`} />
               </div>
               <Button className="mx-auto" type="submit" id="Button">
                 Login

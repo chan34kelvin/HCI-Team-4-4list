@@ -124,7 +124,7 @@ const ListingsSearch = () => {
                   >
                     <Card.Img
                       variant="top"
-                      src={`/HCI-Team-4/images/${data.image}`}
+                      src={`${process.env.PUBLIC_URL}/images/${data.image}`}
                       style={{ width: '18rem', height: '10rem' }}
                     />
                   </Link>
