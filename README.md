@@ -24,6 +24,7 @@ https://www.figma.com/file/Q2QH4xGIy4lTWezAVq1Oce/4List-Wireframes?type=design&n
 # Site Development Report
 
 This report includes every part of the development. From start to finish. **All emails and other private info are removed for security reasons.**
+
 This is where our executive summary, personas, storyboard, competitive landscape and analysis, etc.. are located.
 
 https://docs.google.com/document/d/1eoVXFlKd53Qy4XiJOh50k56t8i25OtZH4Cs7EwWpXQ8/edit?usp=sharing
