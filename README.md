@@ -29,6 +29,9 @@ This is where our executive summary, personas, storyboard, competitive landscape
 
 https://docs.google.com/document/d/1eoVXFlKd53Qy4XiJOh50k56t8i25OtZH4Cs7EwWpXQ8/edit?usp=sharing
 
+# Data Encryption
+
+Used Github Secret To Encrypt the KEYs.
 
 # References:
 
