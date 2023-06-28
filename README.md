@@ -43,6 +43,10 @@ https://www.w3schools.com/jsref/jsref_getday.asp
 
 https://bizdetail.com/list-of-bay-area-cities-copy-paste/
 
+This helped me in using browser router instead of hash router in deploying this.
+
+https://github.com/orgs/community/discussions/36010
+
 # Npm tools installed
 
 npm i react-router-dom@5.2.0
