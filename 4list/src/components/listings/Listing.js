@@ -136,7 +136,7 @@ const Listing = (data1) => {
                     zoom={18}
                     center={center}
                 >
-                    <Marker  position={center} />
+                    <Marker key={"15 bush st"} position={center} />
                 </GoogleMap>
                 </LoadScript>
             </div>

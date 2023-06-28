@@ -99,7 +99,7 @@ EventModel.generateList = (data) => {
 
   if (data.length > 0) {
     // let currentDate = new Date(Date.now())
-    let currentDate = new Date("11-29-2021") //making sure the sample data can load after the due date
+    let currentDate = new Date("2021-11-29T00:00:00-08:00") //making sure the sample data can load after the due date. ISO date string making sure every broswer works (in PST).
     // console.log(currentDate)
     let i = 0 //safety limit
     let j = 0 //how many days after
