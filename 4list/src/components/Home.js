@@ -21,7 +21,9 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
-              marginBottom: "3.5vw"
+              marginBottom: "1vw",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -51,6 +53,8 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -94,6 +98,8 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -122,6 +128,8 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -155,6 +163,8 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
@@ -183,7 +193,9 @@ const Home = () => {
             className="col-12 col-sm-6 col-xl-4"
             style={{
               border: "none",
-              marginBottom: "2vw"
+              marginBottom: "1vw",
+              minHeight: "15vw",
+              maxHeight: "350px",
             }}
           >
             <Card.Header style={{ backgroundColor: '#ff8c00' }}>
