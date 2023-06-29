@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/HCI-Team-4-4list/static/css/main.c49ef4fc.css",
-    "main.js": "/HCI-Team-4-4list/static/js/main.b0e633b5.js",
+    "main.js": "/HCI-Team-4-4list/static/js/main.ca399240.js",
     "static/js/121.cc9d65a4.chunk.js": "/HCI-Team-4-4list/static/js/121.cc9d65a4.chunk.js",
     "static/js/733.6655fdb1.chunk.js": "/HCI-Team-4-4list/static/js/733.6655fdb1.chunk.js",
     "static/js/346.bd870b37.chunk.js": "/HCI-Team-4-4list/static/js/346.bd870b37.chunk.js",
     "static/js/343.0ecf67c5.chunk.js": "/HCI-Team-4-4list/static/js/343.0ecf67c5.chunk.js",
-    "static/js/921.4da9737f.chunk.js": "/HCI-Team-4-4list/static/js/921.4da9737f.chunk.js",
+    "static/js/921.ca57a77f.chunk.js": "/HCI-Team-4-4list/static/js/921.ca57a77f.chunk.js",
     "static/css/979.6e7ba41c.chunk.css": "/HCI-Team-4-4list/static/css/979.6e7ba41c.chunk.css",
     "static/css/521.6e7ba41c.chunk.css": "/HCI-Team-4-4list/static/css/521.6e7ba41c.chunk.css",
     "static/js/521.bbfe5af1.chunk.js": "/HCI-Team-4-4list/static/js/521.bbfe5af1.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/183.c36a0ea5.chunk.js": "/HCI-Team-4-4list/static/js/183.c36a0ea5.chunk.js",
     "static/css/16.ce8c4fc6.chunk.css": "/HCI-Team-4-4list/static/css/16.ce8c4fc6.chunk.css",
     "static/js/16.3ed9fcf2.chunk.js": "/HCI-Team-4-4list/static/js/16.3ed9fcf2.chunk.js",
-    "static/js/861.8167e621.chunk.js": "/HCI-Team-4-4list/static/js/861.8167e621.chunk.js",
+    "static/js/861.40a44ebb.chunk.js": "/HCI-Team-4-4list/static/js/861.40a44ebb.chunk.js",
     "static/css/996.ce8c4fc6.chunk.css": "/HCI-Team-4-4list/static/css/996.ce8c4fc6.chunk.css",
     "static/js/996.343deb33.chunk.js": "/HCI-Team-4-4list/static/js/996.343deb33.chunk.js",
     "static/css/71.c871bd0d.chunk.css": "/HCI-Team-4-4list/static/css/71.c871bd0d.chunk.css",
@@ -30,15 +30,15 @@
     "static/js/78.4c0bf424.chunk.js": "/HCI-Team-4-4list/static/js/78.4c0bf424.chunk.js",
     "static/js/193.faa3c204.chunk.js": "/HCI-Team-4-4list/static/js/193.faa3c204.chunk.js",
     "static/js/820.e2d67b02.chunk.js": "/HCI-Team-4-4list/static/js/820.e2d67b02.chunk.js",
-    "static/js/737.20e50322.chunk.js": "/HCI-Team-4-4list/static/js/737.20e50322.chunk.js",
+    "static/js/737.194491b9.chunk.js": "/HCI-Team-4-4list/static/js/737.194491b9.chunk.js",
     "index.html": "/HCI-Team-4-4list/index.html",
     "main.c49ef4fc.css.map": "/HCI-Team-4-4list/static/css/main.c49ef4fc.css.map",
-    "main.b0e633b5.js.map": "/HCI-Team-4-4list/static/js/main.b0e633b5.js.map",
+    "main.ca399240.js.map": "/HCI-Team-4-4list/static/js/main.ca399240.js.map",
     "121.cc9d65a4.chunk.js.map": "/HCI-Team-4-4list/static/js/121.cc9d65a4.chunk.js.map",
     "733.6655fdb1.chunk.js.map": "/HCI-Team-4-4list/static/js/733.6655fdb1.chunk.js.map",
     "346.bd870b37.chunk.js.map": "/HCI-Team-4-4list/static/js/346.bd870b37.chunk.js.map",
     "343.0ecf67c5.chunk.js.map": "/HCI-Team-4-4list/static/js/343.0ecf67c5.chunk.js.map",
-    "921.4da9737f.chunk.js.map": "/HCI-Team-4-4list/static/js/921.4da9737f.chunk.js.map",
+    "921.ca57a77f.chunk.js.map": "/HCI-Team-4-4list/static/js/921.ca57a77f.chunk.js.map",
     "979.6e7ba41c.chunk.css.map": "/HCI-Team-4-4list/static/css/979.6e7ba41c.chunk.css.map",
     "521.6e7ba41c.chunk.css.map": "/HCI-Team-4-4list/static/css/521.6e7ba41c.chunk.css.map",
     "521.bbfe5af1.chunk.js.map": "/HCI-Team-4-4list/static/js/521.bbfe5af1.chunk.js.map",
@@ -46,7 +46,7 @@
     "183.c36a0ea5.chunk.js.map": "/HCI-Team-4-4list/static/js/183.c36a0ea5.chunk.js.map",
     "16.ce8c4fc6.chunk.css.map": "/HCI-Team-4-4list/static/css/16.ce8c4fc6.chunk.css.map",
     "16.3ed9fcf2.chunk.js.map": "/HCI-Team-4-4list/static/js/16.3ed9fcf2.chunk.js.map",
-    "861.8167e621.chunk.js.map": "/HCI-Team-4-4list/static/js/861.8167e621.chunk.js.map",
+    "861.40a44ebb.chunk.js.map": "/HCI-Team-4-4list/static/js/861.40a44ebb.chunk.js.map",
     "996.ce8c4fc6.chunk.css.map": "/HCI-Team-4-4list/static/css/996.ce8c4fc6.chunk.css.map",
     "996.343deb33.chunk.js.map": "/HCI-Team-4-4list/static/js/996.343deb33.chunk.js.map",
     "71.c871bd0d.chunk.css.map": "/HCI-Team-4-4list/static/css/71.c871bd0d.chunk.css.map",
@@ -62,10 +62,10 @@
     "78.4c0bf424.chunk.js.map": "/HCI-Team-4-4list/static/js/78.4c0bf424.chunk.js.map",
     "193.faa3c204.chunk.js.map": "/HCI-Team-4-4list/static/js/193.faa3c204.chunk.js.map",
     "820.e2d67b02.chunk.js.map": "/HCI-Team-4-4list/static/js/820.e2d67b02.chunk.js.map",
-    "737.20e50322.chunk.js.map": "/HCI-Team-4-4list/static/js/737.20e50322.chunk.js.map"
+    "737.194491b9.chunk.js.map": "/HCI-Team-4-4list/static/js/737.194491b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c49ef4fc.css",
-    "static/js/main.b0e633b5.js"
+    "static/js/main.ca399240.js"
   ]
 }
