@@ -16,7 +16,7 @@ Our advertisement website based off Craigslist strives to give users a better pl
 
 # Designs
 
-With Figma we used this prototype design tool to design our UI/UX. We were able to prototype, design, and stylize our website. It gave a blueprint on how our project will look and allowed us to easily make any changes to our UX whenever necessary.
+With Figma we used this prototype design tool to design our UI/UX. We were able to design our wireframes and stylize our website mockups. It gave a blueprint on how our project will look and allowed us to easily make any changes to our UI/UX whenever necessary.
 
 https://www.figma.com/file/Q2QH4xGIy4lTWezAVq1Oce/4List-Wireframes?type=design&node-id=0%3A1&mode=design&t=FHcusFmqTRhYS9dF-1
 
